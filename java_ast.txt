@@ -1,0 +1,12 @@
+﻿Detected language: Java
+Using enhanced fallback Java parser (ANTLR4 not available)
+
+=== Generated AST ===
+Program () {
+  FunctionDecl (HelloWorld)
+}
+
+
+=== LLVM Support Disabled ===
+Parsing completed successfully, but code generation requires LLVM support.
+Rebuild with -DENABLE_LLVM=ON to enable full compilation pipeline.

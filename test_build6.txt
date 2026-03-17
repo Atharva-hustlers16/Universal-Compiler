@@ -1,0 +1,8 @@
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  frontend.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\frontend.lib
+  runtime_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\runtime_lib.lib
+  backend_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\backend_lib.lib
+  TestFramework.cpp
+  test_umc.vcxproj -> D:\Univ Comp\umc-sdk\full-build\tests\Release\test_umc.exe
+

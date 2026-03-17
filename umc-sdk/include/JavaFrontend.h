@@ -6,6 +6,8 @@
 #include <string>
 #include <memory>
 
+// Check if ANTLR4 is available
+#ifdef ANTLR4Runtime_FOUND
 // Forward declarations for ANTLR generated classes
 namespace antlr4 {
     class ANTLRInputStream;
@@ -16,6 +18,19 @@ namespace antlr4 {
 class JavaLexer;
 class JavaParser;
 class JavaParserBaseVisitor;
+#else
+// Dummy definitions when ANTLR4 is not available
+namespace antlr4 {
+    class ANTLRInputStream {};
+    class CommonTokenStream {};
+    namespace tree {
+        class ParseTree {};
+    }
+}
+class JavaLexer {};
+class JavaParser {};
+class JavaParserBaseVisitor {};
+#endif
 
 class JavaFrontend : public FrontendBase {
 public:
@@ -27,23 +42,24 @@ public:
     Language getLanguage() const override { return Language::JAVA; }
 
 private:
-    std::unique_ptr<ProgramNode> ast_;
-    std::unique_ptr<JavaLexer> lexer_;
-    std::unique_ptr<JavaParser> parser_;
-    std::unique_ptr<antlr4::CommonTokenStream> tokens_;
+#ifdef ANTLR4Runtime_FOUND
     std::unique_ptr<antlr4::ANTLRInputStream> input_;
+    std::unique_ptr<JavaLexer> lexer_;
+    std::unique_ptr<antlr4::CommonTokenStream> tokens_;
+    std::unique_ptr<JavaParser> parser_;
+    antlr4::tree::ParseTree* parseTree_;
+    std::unique_ptr<class JavaASTVisitor> visitor_;
+#endif
 
-    std::unique_ptr<ASTNode> buildASTFromParseTree(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitCompilationUnit(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitClassDeclaration(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitMethodDeclaration(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitFieldDeclaration(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitBlock(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitStatement(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitExpression(antlr4::tree::ParseTree* tree);
-    std::unique_ptr<ASTNode> visitLiteral(antlr4::tree::ParseTree* tree);
-
-    std::string getTextFromParseTree(antlr4::tree::ParseTree* tree);
+    // Fallback parser helper methods
+    void parseStatements(const std::string& body, ASTNode& blockNode);
+    std::unique_ptr<ASTNode> parseStatement(const std::string& statement);
+    std::unique_ptr<ASTNode> parseExpression(const std::string& expr);
+    void parseFunctionArguments(const std::string& argsStr, ASTNode& callNode);
+    size_t findOperatorAtLevel(const std::string& expr, const std::string& operators);
 };
+
+// Factory function for creating Java frontend
+std::unique_ptr<FrontendBase> createJavaFrontend();
 
 #endif // JAVA_FRONTEND_H

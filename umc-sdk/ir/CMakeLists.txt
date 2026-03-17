@@ -7,7 +7,15 @@ add_library(ir STATIC
 )
 
 target_include_directories(ir PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
-target_link_libraries(ir ${llvm_libs} frontend)
+if(LLVM_FOUND)
+    target_link_libraries(ir ${llvm_libs} frontend)
+else()
+    target_link_libraries(ir frontend)
+endif()
 
 # Compiler flags for IR module
-target_compile_options(ir PRIVATE -Wall -Wextra -g)
+if(MSVC)
+    target_compile_options(ir PRIVATE /W4)
+else()
+    target_compile_options(ir PRIVATE -Wall -Wextra -g)
+endif()

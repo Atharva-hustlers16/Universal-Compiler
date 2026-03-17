@@ -1,13 +1,18 @@
 #include "IRGenerator.h"
 #include "ASTNode.h"
-#include <llvm/IR/Verifier.h>
-#include <llvm/IR/Constants.h>
 #include <iostream>
 
+#ifndef NO_LLVM
+#include <llvm/IR/Verifier.h>
+#include <llvm/IR/Constants.h>
+#endif
+
 IRGenerator::IRGenerator() {
+#ifndef NO_LLVM
     context_ = std::make_unique<llvm::LLVMContext>();
     module_ = std::make_unique<llvm::Module>("main", *context_);
     builder_ = std::make_unique<llvm::IRBuilder<>>(*context_);
+#endif
 }
 
 IRGenerator::~IRGenerator() = default;

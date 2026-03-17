@@ -1,0 +1,231 @@
+# UMC-SDK .gitignore File
+# This file specifies intentionally untracked files that git should ignore
+
+# Build Directories
+build/
+full-build/
+debug/
+release/
+out/
+bin/
+lib/
+
+# CMake Generated Files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Visual Studio Files
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled Object Files
+*.o
+*.obj
+*.lib
+*.dll
+*.exe
+*.exp
+*.pdb
+*.ilk
+*.meta
+
+# Executable Files
+ucc.exe
+urun.exe
+*.exe
+
+# Dynamic Libraries
+*.dll
+*.so
+*.dylib
+
+# Static Libraries
+*.a
+*.lib
+
+# Debug Files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Log Files
+*.log
+*.out
+*.err
+
+# Test Output Files
+test_output/
+temp/
+*.temp
+
+# IDE Files (Various Editors)
+.vscode/
+.idea/
+*.sublime-*
+.atom/
+.brackets.json
+
+# Backup Files
+*.bak
+*.backup
+*.orig
+*.rej
+~*
+
+# Configuration Files
+config.local
+.env
+.env.local
+.env.*.local
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+
+# Coverage Reports
+coverage/
+*.gcov
+*.gcda
+*.gcno
+lcov.info
+
+# Profiling Data
+*.prof
+*.profraw
+
+# Package Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python Specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Java Specific
+*.class
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+target/
+.mvn/
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# C/C++ Specific
+*.d
+*.ii
+*.map
+*.stackdump
+
+# LLVM Specific
+*.bc
+*.ll
+
+# ANTLR Specific
+*.interp
+*.tokens
+
+# Tree-sitter Specific
+*.d.ts
+
+# Performance Test Results
+benchmark_results/
+performance_*.json
+*.prof
+
+# Custom Build Scripts
+build_*.sh
+build_*.bat
+configure_*.sh
+
+# Documentation and Notes (optional - uncomment if you want to ignore)
+# docs/
+# notes/
+# TODO.md
+# *.md
+
+# Examples (optional - uncomment if you want to ignore examples in repo)
+# examples/
+# *.c
+# *.py
+# *.java
+
+# Specific to UMC-SDK
+# Test executables
+test_*.exe
+demo_*.exe
+
+# AST output files
+*.ast
+*.dot
+
+# Runtime logs
+runtime_*.log
+execution_*.log
+
+# Memory dumps
+heap_*.dump
+memory_*.dump
+
+# Compiler intermediate files
+*.ir
+*.s
+*.asm

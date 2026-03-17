@@ -65,6 +65,14 @@ private:
     TestResult runSingleTest(const LanguageTestCase& testCase);
     bool validateTestCase(const LanguageTestCase& testCase);
     std::string extractFunctionFromIR(const std::string& irOutput, const std::string& functionName);
+
+    // Reference compiler comparisons
+    bool compareCWithGCC(const std::string& sourceFile);
+    bool compareJavaWithJavac(const std::string& sourceFile);
+    bool comparePythonWithPython(const std::string& sourceFile);
+
+    // Performance benchmarking
+    bool benchmarkPerformance(const std::string& sourceFile);
 };
 
 #endif // TEST_VALIDATOR_H

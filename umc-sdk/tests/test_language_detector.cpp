@@ -1,3 +1,4 @@
+#include <iostream>
 #include "LanguageDetector.h"
 #include <cassert>
 

@@ -1,0 +1,1596 @@
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  frontend.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\frontend.lib
+  runtime_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\runtime_lib.lib
+  Optimizer.cpp
+C:\msys64\mingw64\include\llvm\ADT\DenseMapInfo.h(160,33): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(466,31): warning C4251: 'llvm::raw_fd_ostream::HasColors': 'std::optional<bool>' needs to have dll-interface to be used by clients of 'llvm::raw_fd_ostream' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<bool>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(478,19): warning C4251: 'llvm::raw_fd_ostream::EC': 'std::error_code' needs to have dll-interface to be used by clients of 'llvm::raw_fd_ostream' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\system_error(167,19):
+      see declaration of 'std::error_code'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(748,24): warning C4251: 'llvm::buffer_ostream::Buffer': 'llvm::SmallVector<char,0>' needs to have dll-interface to be used by clients of 'llvm::buffer_ostream' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<char,0>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(758,32): warning C4251: 'llvm::buffer_unique_ostream::OS': 'std::unique_ptr<llvm::raw_ostream,std::default_delete<llvm::raw_ostream>>' needs to have dll-interface to be used by clients of 'llvm::buffer_unique_ostream' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::raw_ostream,std::default_delete<llvm::raw_ostream>>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(759,24): warning C4251: 'llvm::buffer_unique_ostream::Buffer': 'llvm::SmallVector<char,0>' needs to have dll-interface to be used by clients of 'llvm::buffer_unique_ostream' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<char,0>'
+  
+C:\msys64\mingw64\include\llvm\IR\DerivedTypes.h(482,22): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DerivedTypes.h(513,24): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1111,30): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1170,29): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1537,16): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DIExpression>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DIExpression>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(121,72):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DIExpression>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DILabel>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DILabel>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(122,67):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DILabel>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DILocalVariable>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DILocalVariable>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(123,75):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DILocalVariable>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\BasicBlock.h(71,21): warning C4146: unary minus operator applied to unsigned type, result still unsigned [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(90,7): warning C4251: 'llvm::Function::SymTab': 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>' needs to have dll-interface to be used by clients of 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(91,17): warning C4251: 'llvm::Function::AttributeSets': 'llvm::AttributeList' needs to have dll-interface to be used by clients of 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Attributes.h(506,7):
+      see declaration of 'llvm::AttributeList'
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(64,34): warning C4275: non dll-interface class 'llvm::GlobalObject' used as base for dll-interface class 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\GlobalObject.h(28,7):
+      see declaration of 'llvm::GlobalObject'
+      C:\msys64\mingw64\include\llvm\IR\Function.h(64,16):
+      see declaration of 'llvm::Function'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(182,19): warning C4251: 'llvm::Module::NamedMDList': 'llvm::iplist<llvm::NamedMDNode>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\ilist.h(327,7):
+      see declaration of 'llvm::iplist<llvm::NamedMDNode>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(183,15): warning C4251: 'llvm::Module::GlobalScopeAsm': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(184,37): warning C4251: 'llvm::Module::ValSymTab': 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(185,20): warning C4251: 'llvm::Module::ComdatSymTab': 'llvm::StringMap<llvm::Comdat,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<llvm::Comdat,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(187,3): warning C4251: 'llvm::Module::OwnedMemoryBuffer': 'std::unique_ptr<llvm::MemoryBuffer,std::default_delete<llvm::MemoryBuffer>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::MemoryBuffer,std::default_delete<llvm::MemoryBuffer>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(190,3): warning C4251: 'llvm::Module::Materializer': 'std::unique_ptr<llvm::GVMaterializer,std::default_delete<llvm::GVMaterializer>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::GVMaterializer,std::default_delete<llvm::GVMaterializer>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(191,15): warning C4251: 'llvm::Module::ModuleID': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(192,15): warning C4251: 'llvm::Module::SourceFileName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(197,10): warning C4251: 'llvm::Module::TargetTriple': 'llvm::Triple' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\TargetParser\Triple.h(47,7):
+      see declaration of 'llvm::Triple'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(198,21): warning C4251: 'llvm::Module::NamedMDSymTab': 'llvm::StringMap<llvm::NamedMDNode *,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<llvm::NamedMDNode *,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(199,14): warning C4251: 'llvm::Module::DL': 'llvm::DataLayout' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\DataLayout.h(63,7):
+      see declaration of 'llvm::DataLayout'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(201,7): warning C4251: 'llvm::Module::CurrentIntrinsicIds': 'llvm::StringMap<unsigned int,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<unsigned int,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251: 'llvm::Module::UniquedIntrinsicNames': 'llvm::DenseMap<std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:             KeyT=std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:             ValueT=unsigned int [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,
+              ValueT=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\ADT\Any.h(124,32): warning C4251: 'llvm::Any::Storage': 'std::unique_ptr<llvm::Any::StorageBase,std::default_delete<llvm::Any::StorageBase>>' needs to have dll-interface to be used by clients of 'llvm::Any' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::Any::StorageBase,std::default_delete<llvm::Any::StorageBase>>'
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1241,25): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1263,14): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1290,48): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1325,14): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1997,25): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(2032,53): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(2316,28): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Constants.h(808,66): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251: 'llvm::PassManager<llvm::Module,llvm::AnalysisManager<IRUnitT>>::Passes': 'std::vector<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>,std::allocator<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>>>' needs to have dll-interface to be used by clients of 'llvm::PassManager<llvm::Module,llvm::AnalysisManager<IRUnitT>>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:             IRUnitT=llvm::Module [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>,std::allocator<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>>>'
+          with
+          [
+              IRUnitT=llvm::Module,
+              AnalysisManagerT=llvm::AnalysisManager<llvm::Module>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\PassManager.h(236,60):
+          see reference to class template instantiation 'llvm::PassManager<llvm::Module,llvm::AnalysisManager<IRUnitT>>' being compiled
+          with
+          [
+              IRUnitT=llvm::Module
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251: 'llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>::Passes': 'std::vector<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>,std::allocator<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>>>' needs to have dll-interface to be used by clients of 'llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>,std::allocator<std::unique_ptr<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>,std::default_delete<llvm::detail::PassConcept<IRUnitT,AnalysisManagerT>>>>>'
+          with
+          [
+              IRUnitT=llvm::Function,
+              AnalysisManagerT=llvm::AnalysisManager<llvm::Function>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(226,46):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\PassManager.h(245,62):
+          see reference to class template instantiation 'llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>' being compiled
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisPasses': 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             IRUnitT=llvm::Module [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Module,
+              KeyT=llvm::AnalysisKey *,
+              ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>>>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\PassManager.h(540,64):
+          see reference to class template instantiation 'llvm::AnalysisManager<IRUnitT>' being compiled
+          with
+          [
+              IRUnitT=llvm::Module
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisResultLists': 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             IRUnitT=llvm::Module [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Module,
+              KeyT=llvm::Module *,
+              ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisResults': 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             IRUnitT=llvm::Module [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Module,
+              _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>>>>,
+              KeyT=std::pair<llvm::AnalysisKey *,llvm::Module *>,
+              ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Module,llvm::AnalysisManager<llvm::Module>::Invalidator>>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisPasses': 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Function,
+              KeyT=llvm::AnalysisKey *,
+              ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>>>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\PassManager.h(545,66):
+          see reference to class template instantiation 'llvm::AnalysisManager<IRUnitT>' being compiled
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisResultLists': 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Function,
+              KeyT=llvm::Function *,
+              ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251: 'llvm::AnalysisManager<IRUnitT>::AnalysisResults': 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Function,
+              _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>>>>,
+              KeyT=std::pair<llvm::AnalysisKey *,llvm::Function *>,
+              ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Function,llvm::AnalysisManager<llvm::Function>::Invalidator>>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(380,16): warning C4244: '=': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(419,16): warning C4244: '=': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(490,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(491,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(502,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(510,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(511,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(527,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(528,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(537,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(538,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(568,29): warning C4267: 'initializing': conversion from 'size_t' to 'llvm::BitVector::size_type', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(576,29): warning C4267: 'initializing': conversion from 'size_t' to 'llvm::BitVector::size_type', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(586,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(635,23): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(748,23): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(766,23): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(829,56): warning C4267: 'return': conversion from 'size_t' to 'llvm::BitVector::size_type', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ADT\BitVector.h(830,57): warning C4267: 'return': conversion from 'size_t' to 'llvm::BitVector::size_type', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(436,47): warning C4251: 'llvm::ErrorList::Payloads': 'std::vector<std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>,std::allocator<std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>>>' needs to have dll-interface to be used by clients of 'llvm::ErrorList' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>,std::allocator<std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>>>'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1210,19): warning C4251: 'llvm::ECError::EC': 'std::error_code' needs to have dll-interface to be used by clients of 'llvm::ECError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\system_error(167,19):
+      see declaration of 'std::error_code'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1298,15): warning C4251: 'llvm::StringError::Msg': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::StringError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1299,19): warning C4251: 'llvm::StringError::EC': 'std::error_code' needs to have dll-interface to be used by clients of 'llvm::StringError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\system_error(167,19):
+      see declaration of 'std::error_code'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1392,15): warning C4251: 'llvm::FileError::FileName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::FileError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1393,25): warning C4251: 'llvm::FileError::Line': 'std::optional<uint64_t>' needs to have dll-interface to be used by clients of 'llvm::FileError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<uint64_t>'
+  
+C:\msys64\mingw64\include\llvm\Support\Error.h(1394,34): warning C4251: 'llvm::FileError::Err': 'std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>' needs to have dll-interface to be used by clients of 'llvm::FileError' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ErrorInfoBase,std::default_delete<llvm::ErrorInfoBase>>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\TargetLibraryInfo.h(647,25): warning C4251: 'llvm::TargetLibraryInfoWrapperPass::TLA': 'llvm::TargetLibraryAnalysis' needs to have dll-interface to be used by clients of 'llvm::TargetLibraryInfoWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\TargetLibraryInfo.h(621,7):
+      see declaration of 'llvm::TargetLibraryAnalysis'
+  
+C:\msys64\mingw64\include\llvm\Analysis\TargetLibraryInfo.h(648,36): warning C4251: 'llvm::TargetLibraryInfoWrapperPass::TLI': 'std::optional<llvm::TargetLibraryInfo>' needs to have dll-interface to be used by clients of 'llvm::TargetLibraryInfoWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<llvm::TargetLibraryInfo>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\LazyCallGraph.h(422,28): warning C4251: 'llvm::LazyCallGraph::SCC::Nodes': 'llvm::SmallVector<llvm::LazyCallGraph::Node *,1>' needs to have dll-interface to be used by clients of 'llvm::LazyCallGraph::SCC' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::LazyCallGraph::Node *,1>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\LazyCallGraph.h(478,41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(384,36): warning C4275: non dll-interface class 'llvm::ValueHandleBase' used as base for dll-interface class 'llvm::CallbackVH' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(30,7):
+      see declaration of 'llvm::ValueHandleBase'
+      C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(384,16):
+      see declaration of 'llvm::CallbackVH'
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251: 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::AnalysisPasses': 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             IRUnitT=llvm::LazyCallGraph::SCC, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             KeyT=llvm::AnalysisKey *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::LazyCallGraph::SCC,
+              KeyT=llvm::AnalysisKey *,
+              ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator,llvm::LazyCallGraph &>>>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Analysis\CGSCCPassManager.h(115,57):
+          see reference to class template instantiation 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251: 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::AnalysisResultLists': 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             IRUnitT=llvm::LazyCallGraph::SCC, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             KeyT=llvm::LazyCallGraph::SCC *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LazyCallGraph &>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::LazyCallGraph::SCC,
+              KeyT=llvm::LazyCallGraph::SCC *,
+              ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251: 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::AnalysisResults': 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             IRUnitT=llvm::LazyCallGraph::SCC, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             KeyT=std::pair<llvm::AnalysisKey *,llvm::LazyCallGraph::SCC *>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::LazyCallGraph::SCC,
+              _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>,
+              KeyT=std::pair<llvm::AnalysisKey *,llvm::LazyCallGraph::SCC *>,
+              ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::LazyCallGraph::SCC,llvm::AnalysisManager<llvm::LazyCallGraph::SCC,llvm::LazyCallGraph &>::Invalidator>>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251: 'llvm::AnalysisManager<llvm::MachineFunction>::AnalysisPasses': 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::MachineFunction>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             IRUnitT=llvm::MachineFunction, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             KeyT=llvm::AnalysisKey *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::MachineFunction,
+              KeyT=llvm::AnalysisKey *,
+              ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\CodeGen\MachineFunctionAnalysisManager.h(23,73):
+          see reference to class template instantiation 'llvm::AnalysisManager<llvm::MachineFunction>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251: 'llvm::AnalysisManager<llvm::MachineFunction>::AnalysisResultLists': 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::MachineFunction>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             IRUnitT=llvm::MachineFunction, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             KeyT=llvm::MachineFunction *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::MachineFunction,
+              KeyT=llvm::MachineFunction *,
+              ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251: 'llvm::AnalysisManager<llvm::MachineFunction>::AnalysisResults': 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::MachineFunction>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             IRUnitT=llvm::MachineFunction, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             KeyT=std::pair<llvm::AnalysisKey *,llvm::MachineFunction *>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::MachineFunction,
+              _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>,
+              KeyT=std::pair<llvm::AnalysisKey *,llvm::MachineFunction *>,
+              ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::MachineFunction,llvm::AnalysisManager<llvm::MachineFunction>::Invalidator>>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\MachineValueType.h(199,56): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\MachineValueType.h(221,45): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\LowLevelType.h(186,43): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\LowLevelType.h(267,27): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\LowLevelType.h(268,25): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGenTypes\LowLevelType.h(274,25): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineOperand.h(1034,22): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\MC\MCExpr.h(465,38): warning C4275: non dll-interface class 'llvm::MCExpr' used as base for dll-interface class 'llvm::MCTargetExpr' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\MC\MCExpr.h(34,7):
+      see declaration of 'llvm::MCExpr'
+      C:\msys64\mingw64\include\llvm\MC\MCExpr.h(465,16):
+      see declaration of 'llvm::MCTargetExpr'
+  
+C:\msys64\mingw64\include\llvm\MC\MCExpr.h(495,41): warning C4275: non dll-interface class 'llvm::MCExpr' used as base for dll-interface class 'llvm::MCSpecifierExpr' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\MC\MCExpr.h(34,7):
+      see declaration of 'llvm::MCExpr'
+      C:\msys64\mingw64\include\llvm\MC\MCExpr.h(495,16):
+      see declaration of 'llvm::MCSpecifierExpr'
+  
+C:\msys64\mingw64\include\llvm\MC\MCInst.h(212,57): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(93,9): warning C4251: 'llvm::MCSection::Alignment': 'llvm::Align' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Alignment.h(39,8):
+      see declaration of 'llvm::Align'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(123,49): warning C4251: 'llvm::MCSection::Subsections': 'llvm::SmallVector<std::pair<unsigned int,llvm::MCSection::FragList>,1>' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<std::pair<unsigned int,llvm::MCSection::FragList>,1>'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(126,24): warning C4251: 'llvm::MCSection::ContentStorage': 'llvm::SmallVector<char,0>' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<char,0>'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(127,27): warning C4251: 'llvm::MCSection::FixupStorage': 'llvm::SmallVector<llvm::MCFixup,0>' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::MCFixup,0>'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(128,29): warning C4251: 'llvm::MCSection::MCOperandStorage': 'llvm::SmallVector<llvm::MCOperand,0>' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::MCOperand,0>'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(132,13): warning C4251: 'llvm::MCSection::Name': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::MCSection' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(378,71): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\MC\MCSection.h(459,28): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(182,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(591,53): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(631,25): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(636,33): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(772,14): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(814,65): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(1057,26): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(1136,26): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineInstr.h(1149,26): warning C4244: 'initializing': conversion from 'int64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(323,35): warning C4251: 'llvm::MachineFunction::MBBNumbering': 'std::vector<llvm::MachineBasicBlock *,std::allocator<llvm::MachineBasicBlock *>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<llvm::MachineBasicBlock *,std::allocator<llvm::MachineBasicBlock *>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(330,20): warning C4251: 'llvm::MachineFunction::Allocator': 'llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator,4096,4096,128>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Allocator.h(64,7):
+      see declaration of 'llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator,4096,4096,128>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(333,26): warning C4251: 'llvm::MachineFunction::InstructionRecycler': 'llvm::Recycler<llvm::MachineInstr,88,8>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Recycler.h(36,7):
+      see declaration of 'llvm::Recycler<llvm::MachineInstr,88,8>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(336,33): warning C4251: 'llvm::MachineFunction::OperandRecycler': 'llvm::ArrayRecycler<llvm::MachineOperand,8>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\ArrayRecycler.h(28,53):
+      see declaration of 'llvm::ArrayRecycler<llvm::MachineOperand,8>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(339,31): warning C4251: 'llvm::MachineFunction::BasicBlockRecycler': 'llvm::Recycler<llvm::MachineBasicBlock,312,8>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Recycler.h(36,7):
+      see declaration of 'llvm::Recycler<llvm::MachineBasicBlock,312,8>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(343,22): warning C4251: 'llvm::MachineFunction::BasicBlocks': 'llvm::iplist<llvm::MachineBasicBlock>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\ilist.h(327,7):
+      see declaration of 'llvm::iplist<llvm::MachineBasicBlock>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(351,9): warning C4251: 'llvm::MachineFunction::Alignment': 'llvm::Align' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Alignment.h(39,8):
+      see declaration of 'llvm::Align'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(368,29): warning C4251: 'llvm::MachineFunction::Properties': 'llvm::MachineFunctionProperties' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(137,7):
+      see declaration of 'llvm::MachineFunctionProperties'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(371,45): warning C4251: 'llvm::MachineFunction::PSVManager': 'std::unique_ptr<llvm::PseudoSourceValueManager,std::default_delete<llvm::PseudoSourceValueManager>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::PseudoSourceValueManager,std::default_delete<llvm::PseudoSourceValueManager>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(375,33): warning C4251: 'llvm::MachineFunction::FrameInstructions': 'std::vector<llvm::MCCFIInstruction,std::allocator<llvm::MCCFIInstruction>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<llvm::MCCFIInstruction,std::allocator<llvm::MCCFIInstruction>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(379,27): warning C4251: 'llvm::MachineFunction::LongjmpTargets': 'std::vector<llvm::MCSymbol *,std::allocator<llvm::MCSymbol *>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<llvm::MCSymbol *,std::allocator<llvm::MCSymbol *>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(383,27): warning C4251: 'llvm::MachineFunction::EHContTargets': 'std::vector<llvm::MCSymbol *,std::allocator<llvm::MCSymbol *>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<llvm::MCSymbol *,std::allocator<llvm::MCSymbol *>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(389,31): warning C4251: 'llvm::MachineFunction::LandingPads': 'std::vector<llvm::LandingPadInfo,std::allocator<llvm::LandingPadInfo>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<llvm::LandingPadInfo,std::allocator<llvm::LandingPadInfo>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251: 'llvm::MachineFunction::LPadToCallSiteMap': 'llvm::DenseMap<llvm::MCSymbol *,llvm::SmallVector<unsigned int,4>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251:             KeyT=llvm::MCSymbol *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251:             ValueT=llvm::SmallVector<unsigned int,4> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(392,49): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::MCSymbol *,llvm::SmallVector<unsigned int,4>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=llvm::MCSymbol *,
+              ValueT=llvm::SmallVector<unsigned int,4>
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251: 'llvm::MachineFunction::WasmLPadToIndexMap': 'llvm::DenseMap<const llvm::MachineBasicBlock *,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251:             KeyT=const llvm::MachineBasicBlock *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251:             ValueT=unsigned int [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(395,49): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<const llvm::MachineBasicBlock *,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=const llvm::MachineBasicBlock *,
+              ValueT=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251: 'llvm::MachineFunction::CallSiteMap': 'llvm::DenseMap<llvm::MCSymbol *,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251:             KeyT=llvm::MCSymbol *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251:             ValueT=unsigned int [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(398,33): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::MCSymbol *,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=llvm::MCSymbol *,
+              ValueT=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(401,48): warning C4251: 'llvm::MachineFunction::CodeViewAnnotations': 'std::vector<std::pair<llvm::MCSymbol *,llvm::MDNode *>,std::allocator<std::pair<llvm::MCSymbol *,llvm::MDNode *>>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<std::pair<llvm::MCSymbol *,llvm::MDNode *>,std::allocator<std::pair<llvm::MCSymbol *,llvm::MDNode *>>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(418,36): warning C4251: 'llvm::MachineFunction::TypeInfos': 'std::vector<const llvm::GlobalValue *,std::allocator<const llvm::GlobalValue *>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<const llvm::GlobalValue *,std::allocator<const llvm::GlobalValue *>>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(421,25): warning C4251: 'llvm::MachineFunction::FilterIds': 'std::vector<T,std::allocator<T>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(421,25): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(421,25): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(421,25): warning C4251:             T=unsigned int [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(421,25): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<T,std::allocator<T>>'
+          with
+          [
+              T=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(424,25): warning C4251: 'llvm::MachineFunction::FilterEnds': 'std::vector<T,std::allocator<T>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(424,25): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(424,25): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(424,25): warning C4251:             T=unsigned int [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(424,25): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<T,std::allocator<T>>'
+          with
+          [
+              T=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251: 'llvm::MachineFunction::CallSitesInfo': 'llvm::DenseMap<const llvm::MachineInstr *,llvm::MachineFunction::CallSiteInfo,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251:             KeyT=const llvm::MachineInstr *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251:             ValueT=llvm::MachineFunction::CallSiteInfo [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(531,19): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<const llvm::MachineInstr *,llvm::MachineFunction::CallSiteInfo,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=const llvm::MachineInstr *,
+              ValueT=llvm::MachineFunction::CallSiteInfo
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251: 'llvm::MachineFunction::CalledGlobalsInfo': 'llvm::DenseMap<const llvm::MachineInstr *,llvm::MachineFunction::CalledGlobalInfo,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251:             KeyT=const llvm::MachineInstr *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251:             ValueT=llvm::MachineFunction::CalledGlobalInfo [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(540,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<const llvm::MachineInstr *,llvm::MachineFunction::CalledGlobalInfo,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=const llvm::MachineInstr *,
+              ValueT=llvm::MachineFunction::CalledGlobalInfo
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(552,24): warning C4251: 'llvm::MachineFunction::VariableDbgInfos': 'llvm::SmallVector<llvm::MachineFunction::VariableDbgInfo,4>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::MachineFunction::VariableDbgInfo,4>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(596,37): warning C4251: 'llvm::MachineFunction::DebugValueSubstitutions': 'llvm::SmallVector<llvm::MachineFunction::DebugSubstitution,8>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::MachineFunction::DebugSubstitution,8>'
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251: 'llvm::MachineFunction::DebugPHIPositions': 'llvm::DenseMap<unsigned int,llvm::MachineFunction::DebugPHIRegallocPos,llvm::DenseMapInfo<unsigned int,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::MachineFunction' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251:             KeyT=unsigned int, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251:             ValueT=llvm::MachineFunction::DebugPHIRegallocPos [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(614,43): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<unsigned int,llvm::MachineFunction::DebugPHIRegallocPos,llvm::DenseMapInfo<unsigned int,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=unsigned int,
+              ValueT=llvm::MachineFunction::DebugPHIRegallocPos
+          ]
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(1127,41): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\CodeGen\MachineFunction.h(1128,29): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(160,29): warning C4251: 'llvm::DefaultInlineAdvice::OIC': 'std::optional<llvm::InlineCost>' needs to have dll-interface to be used by clients of 'llvm::DefaultInlineAdvice' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<llvm::InlineCost>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(145,45): warning C4275: non dll-interface class 'llvm::InlineAdvice' used as base for dll-interface class 'llvm::DefaultInlineAdvice' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(75,7):
+      see declaration of 'llvm::InlineAdvice'
+      C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(145,16):
+      see declaration of 'llvm::DefaultInlineAdvice'
+  
+C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(212,38): warning C4251: 'llvm::InlineAdvisor::IC': 'std::optional<llvm::InlineContext>' needs to have dll-interface to be used by clients of 'llvm::InlineAdvisor' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<llvm::InlineContext>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(213,21): warning C4251: 'llvm::InlineAdvisor::AnnotatedInlinePassName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::InlineAdvisor' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\InlineAdvisor.h(214,56): warning C4251: 'llvm::InlineAdvisor::ImportedFunctionsStats': 'std::unique_ptr<llvm::ImportedFunctionsInliningStatistics,std::default_delete<llvm::ImportedFunctionsInliningStatistics>>' needs to have dll-interface to be used by clients of 'llvm::InlineAdvisor' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ImportedFunctionsInliningStatistics,std::default_delete<llvm::ImportedFunctionsInliningStatistics>>'
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251: 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::AnalysisPasses': 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             IRUnitT=llvm::Loop, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             KeyT=llvm::AnalysisKey *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:             ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>,std::default_delete<llvm::detail::AnalysisPassConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Loop,
+              KeyT=llvm::AnalysisKey *,
+              ValueT=std::unique_ptr<llvm::detail::AnalysisPassConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>,std::default_delete<llvm::detail::AnalysisPassConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator,llvm::LoopStandardAnalysisResults &>>>
+          ]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(527,20):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Analysis\LoopAnalysisManager.h(71,57):
+          see reference to class template instantiation 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251: 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::AnalysisResultLists': 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             IRUnitT=llvm::Loop, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             KeyT=llvm::Loop *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:             ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(533,26): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<IRUnitT *,std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<IRUnitT,llvm::AnalysisManager<IRUnitT,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Loop,
+              KeyT=llvm::Loop *,
+              ValueT=std::list<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>,std::allocator<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251: 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::AnalysisResults': 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             IRUnitT=llvm::Loop, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             KeyT=std::pair<llvm::AnalysisKey *,llvm::Loop *>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:             ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>>> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\PassManager.h(537,22): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::AnalysisKey *,IRUnitT *>,std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              IRUnitT=llvm::Loop,
+              _Ty=std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>,
+              KeyT=std::pair<llvm::AnalysisKey *,llvm::Loop *>,
+              ValueT=std::_List_iterator<std::_List_val<std::_List_simple_types<std::pair<llvm::AnalysisKey *,std::unique_ptr<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>,std::default_delete<llvm::detail::AnalysisResultConcept<llvm::Loop,llvm::AnalysisManager<llvm::Loop,llvm::LoopStandardAnalysisResults &>::Invalidator>>>>>>>
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\CFG.h(125,23): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(1555,74): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2018,26): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2029,26): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2052,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2084,76): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2125,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2146,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2170,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2219,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2243,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3301,24): warning C4244: 'argument': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3768,37): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3914,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3914,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3926,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3926,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24): warning C4251: 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>::SubLoops': 'std::vector<LoopT *,std::allocator<LoopT *>>' needs to have dll-interface to be used by clients of 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<LoopT *,std::allocator<LoopT *>>'
+          with
+          [
+              LoopT=llvm::Loop
+          ]
+      C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(62,24):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Analysis\LoopInfo.h(36,67):
+          see reference to class template instantiation 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>' being compiled
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(65,25): warning C4251: 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>::Blocks': 'std::vector<T,std::allocator<T>>' needs to have dll-interface to be used by clients of 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(65,25): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(65,25): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(65,25): warning C4251:             T=llvm::BasicBlock * [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(65,25): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<T,std::allocator<T>>'
+          with
+          [
+              T=llvm::BasicBlock *
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(67,34): warning C4251: 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>::DenseBlockSet': 'llvm::SmallPtrSet<const BlockT *,8>' needs to have dll-interface to be used by clients of 'llvm::LoopBase<llvm::BasicBlock,llvm::Loop>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(67,34): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(67,34): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(67,34): warning C4251:             BlockT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(67,34): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallPtrSet.h(529,7):
+      see declaration of 'llvm::SmallPtrSet<const BlockT *,8>'
+          with
+          [
+              BlockT=llvm::BasicBlock
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251: 'llvm::LoopInfoBase<BlockT,LoopT>::BBMap': 'llvm::DenseMap<const BlockT *,LoopT *,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::LoopInfoBase<BlockT,LoopT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251:             BlockT=llvm::BasicBlock, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<const BlockT *,LoopT *,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              BlockT=llvm::BasicBlock,
+              LoopT=llvm::Loop,
+              KeyT=const llvm::BasicBlock *,
+              ValueT=llvm::Loop *
+          ]
+      C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(528,37):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Analysis\LoopInfo.h(406,71):
+          see reference to class template instantiation 'llvm::LoopInfoBase<BlockT,LoopT>' being compiled
+          with
+          [
+              BlockT=llvm::BasicBlock,
+              LoopT=llvm::Loop
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251: 'llvm::LoopInfoBase<BlockT,LoopT>::TopLevelLoops': 'std::vector<LoopT *,std::allocator<LoopT *>>' needs to have dll-interface to be used by clients of 'llvm::LoopInfoBase<BlockT,LoopT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:             BlockT=llvm::BasicBlock, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         and [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         and [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:             BlockT=llvm::BasicBlock, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(529,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<LoopT *,std::allocator<LoopT *>>'
+          with
+          [
+              LoopT=llvm::Loop
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251: 'llvm::LoopInfoBase<BlockT,LoopT>::LoopAllocator': 'llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator,4096,4096,128>' needs to have dll-interface to be used by clients of 'llvm::LoopInfoBase<BlockT,LoopT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251:             BlockT=llvm::BasicBlock, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251:             LoopT=llvm::Loop [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericLoopInfo.h(530,20): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Support\Allocator.h(64,7):
+      see declaration of 'llvm::BumpPtrAllocatorImpl<llvm::MallocAllocator,4096,4096,128>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\LoopInfo.h(597,12): warning C4251: 'llvm::LoopInfoWrapperPass::LI': 'llvm::LoopInfo' needs to have dll-interface to be used by clients of 'llvm::LoopInfoWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\LoopInfo.h(408,7):
+      see declaration of 'llvm::LoopInfo'
+  
+C:\msys64\mingw64\include\llvm\Analysis\LoopNestAnalysis.h(185,16): warning C4251: 'llvm::LoopNest::Loops': 'llvm::SmallVector<llvm::Loop *,8>' needs to have dll-interface to be used by clients of 'llvm::LoopNest' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::Loop *,8>'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(283,13): warning C4251: 'llvm::cl::Option::ArgStr': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::cl::Option' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(284,13): warning C4251: 'llvm::cl::Option::HelpStr': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::cl::Option' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(285,13): warning C4251: 'llvm::cl::Option::ValueStr': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::cl::Option' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(287,7): warning C4251: 'llvm::cl::Option::Categories': 'llvm::SmallVector<llvm::cl::OptionCategory *,1>' needs to have dll-interface to be used by clients of 'llvm::cl::Option' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::cl::OptionCategory *,1>'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(288,32): warning C4251: 'llvm::cl::Option::Subs': 'llvm::SmallPtrSet<llvm::cl::SubCommand *,1>' needs to have dll-interface to be used by clients of 'llvm::cl::Option' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallPtrSet.h(529,7):
+      see declaration of 'llvm::SmallPtrSet<llvm::cl::SubCommand *,1>'
+  
+C:\msys64\mingw64\include\llvm\Support\CommandLine.h(658,50): warning C4251: 'llvm::cl::OptionValueCopy<std::string>::Value': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::cl::OptionValueCopy<std::string>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\DebugInfoMetadata.h(3341,57): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DebugInfoMetadata.h(4672,24): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\IntrinsicInst.h(264,63): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\IntrinsicInst.h(1295,71): warning C4244: 'return': conversion from 'uint64_t' to 'uint32_t', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\IntrinsicInst.h(1711,61): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\IntrinsicInst.h(1717,61): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(278,52): warning C4275: non dll-interface class 'llvm::SCEVPredicate' used as base for dll-interface class 'llvm::SCEVComparePredicate' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(215,7):
+      see declaration of 'llvm::SCEVPredicate'
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(278,16):
+      see declaration of 'llvm::SCEVComparePredicate'
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(318,49): warning C4275: non dll-interface class 'llvm::SCEVPredicate' used as base for dll-interface class 'llvm::SCEVWrapPredicate' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(215,7):
+      see declaration of 'llvm::SCEVPredicate'
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(318,16):
+      see declaration of 'llvm::SCEVWrapPredicate'
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(419,42): warning C4251: 'llvm::SCEVUnionPredicate::Preds': 'llvm::SmallVector<const llvm::SCEVPredicate *,16>' needs to have dll-interface to be used by clients of 'llvm::SCEVUnionPredicate' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<const llvm::SCEVPredicate *,16>'
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(413,50): warning C4275: non dll-interface class 'llvm::SCEVPredicate' used as base for dll-interface class 'llvm::SCEVUnionPredicate' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(215,7):
+      see declaration of 'llvm::SCEVPredicate'
+      C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(413,16):
+      see declaration of 'llvm::SCEVUnionPredicate'
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(437,62): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(669,61): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(1423,67): warning C4244: 'argument': conversion from 'uintptr_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(1422,67): warning C4244: 'argument': conversion from 'uintptr_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\ScalarEvolution.h(2391,36): warning C4251: 'llvm::ScalarEvolutionWrapperPass::SE': 'std::unique_ptr<llvm::ScalarEvolution,std::default_delete<llvm::ScalarEvolution>>' needs to have dll-interface to be used by clients of 'llvm::ScalarEvolutionWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ScalarEvolution,std::default_delete<llvm::ScalarEvolution>>'
+  
+C:\msys64\mingw64\include\llvm\Support\SourceMgr.h(131,55): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Support\SourceMgr.h(151,24): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(292,13): warning C4251: 'llvm::DiagnosticInfoSampleProfile::FileName': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoSampleProfile' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(383,22): warning C4251: 'llvm::DiagnosticInfoWithLocationBase::Loc': 'llvm::DiagnosticLocation' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoWithLocationBase' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(328,7):
+      see declaration of 'llvm::DiagnosticLocation'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(605,13): warning C4251: 'llvm::DiagnosticInfoOptimizationBase::RemarkName': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoOptimizationBase' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(609,27): warning C4251: 'llvm::DiagnosticInfoOptimizationBase::Hotness': 'std::optional<uint64_t>' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoOptimizationBase' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<uint64_t>'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(612,28): warning C4251: 'llvm::DiagnosticInfoOptimizationBase::Args': 'llvm::SmallVector<llvm::DiagnosticInfoOptimizationBase::Argument,4>' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoOptimizationBase' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::DiagnosticInfoOptimizationBase::Argument,4>'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(1144,13): warning C4251: 'llvm::DiagnosticInfoSrcMgr::ModName': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoSrcMgr' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(1171,13): warning C4251: 'llvm::DiagnosticInfoDontCall::CalleeName': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoDontCall' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\IR\DiagnosticInfo.h(1172,13): warning C4251: 'llvm::DiagnosticInfoDontCall::Note': 'llvm::StringRef' needs to have dll-interface to be used by clients of 'llvm::DiagnosticInfoDontCall' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringRef.h(53,26):
+      see declaration of 'llvm::StringRef'
+  
+C:\msys64\mingw64\include\llvm\Analysis\LoopAccessAnalysis.h(323,39): warning C4146: unary minus operator applied to unsigned type, result still unsigned [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\LoopAccessAnalysis.h(574,58): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Analysis\TargetTransformInfo.h(2026,20): warning C4251: 'llvm::TargetTransformInfoWrapperPass::TIRA': 'llvm::TargetIRAnalysis' needs to have dll-interface to be used by clients of 'llvm::TargetTransformInfoWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Analysis\TargetTransformInfo.h(1968,7):
+      see declaration of 'llvm::TargetIRAnalysis'
+  
+C:\msys64\mingw64\include\llvm\Analysis\TargetTransformInfo.h(2027,38): warning C4251: 'llvm::TargetTransformInfoWrapperPass::TTI': 'std::optional<llvm::TargetTransformInfo>' needs to have dll-interface to be used by clients of 'llvm::TargetTransformInfoWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<llvm::TargetTransformInfo>'
+  
+C:\msys64\mingw64\include\llvm\IR\DroppedVariableStatsIR.h(32,48): warning C4275: non dll-interface class 'llvm::DroppedVariableStats' used as base for dll-interface class 'llvm::DroppedVariableStatsIR' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\DroppedVariableStats.h(41,7):
+      see declaration of 'llvm::DroppedVariableStats'
+      C:\msys64\mingw64\include\llvm\IR\DroppedVariableStatsIR.h(32,16):
+      see declaration of 'llvm::DroppedVariableStatsIR'
+  
+C:\msys64\mingw64\include\llvm\IR\OptBisect.h(44,35): warning C4275: non dll-interface class 'llvm::OptPassGate' used as base for dll-interface class 'llvm::OptBisect' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\OptBisect.h(25,7):
+      see declaration of 'llvm::OptPassGate'
+      C:\msys64\mingw64\include\llvm\IR\OptBisect.h(44,16):
+      see declaration of 'llvm::OptBisect'
+  
+C:\msys64\mingw64\include\llvm\ProfileData\FunctionId.h(190,27): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ProfileData\SampleProf.h(426,43): warning C4244: '=': conversion from 'float' to 'unsigned __int64', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\ProfileData\SampleProf.h(1575,27): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251: 'llvm::ChangeReporter<IRUnitT>::BeforeStack': 'std::vector<T,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of 'llvm::ChangeReporter<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<T,std::allocator<_Ty>>'
+      C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(212,44):
+          while compiling class template 'llvm::ChangeReporter'
+  
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251: 'llvm::ChangeReporter<IRUnitT>::BeforeStack': 'std::vector<std::string,std::allocator<std::string>>' needs to have dll-interface to be used by clients of 'llvm::ChangeReporter<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:             IRUnitT=std::string [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<std::string,std::allocator<std::string>>'
+      C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(285,42):
+          see reference to class template instantiation 'llvm::TextChangeReporter<std::string>' being compiled
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(261,44):
+          see reference to class template instantiation 'llvm::ChangeReporter<IRUnitT>' being compiled
+          with
+          [
+              IRUnitT=std::string
+          ]
+  
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251: 'llvm::ChangeReporter<IRUnitT>::BeforeStack': 'std::vector<IRUnitT,std::allocator<IRUnitT>>' needs to have dll-interface to be used by clients of 'llvm::ChangeReporter<IRUnitT>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:             IRUnitT=llvm::IRDataT<llvm::EmptyData> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<IRUnitT,std::allocator<IRUnitT>>'
+          with
+          [
+              IRUnitT=llvm::IRDataT<llvm::EmptyData>
+          ]
+      C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(449,14):
+          see reference to class template instantiation 'llvm::TextChangeReporter<llvm::IRDataT<llvm::EmptyData>>' being compiled
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(261,44):
+          see reference to class template instantiation 'llvm::ChangeReporter<IRUnitT>' being compiled
+          with
+          [
+              IRUnitT=llvm::IRDataT<llvm::EmptyData>
+          ]
+  
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251: 'llvm::ChangeReporter<llvm::IRDataT<llvm::DCData>>::BeforeStack': 'std::vector<IRUnitT,std::allocator<IRUnitT>>' needs to have dll-interface to be used by clients of 'llvm::ChangeReporter<llvm::IRDataT<llvm::DCData>>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:             IRUnitT=llvm::IRDataT<llvm::DCData> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector(442,7):
+      see declaration of 'std::vector<IRUnitT,std::allocator<IRUnitT>>'
+          with
+          [
+              IRUnitT=llvm::IRDataT<llvm::DCData>
+          ]
+      C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(250,24):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(536,46):
+          see reference to class template instantiation 'llvm::ChangeReporter<llvm::IRDataT<llvm::DCData>>' being compiled
+  
+C:\msys64\mingw64\include\llvm\Passes\StandardInstrumentations.h(575,35): warning C4251: 'llvm::DotCfgChangeReporter::HTML': 'std::unique_ptr<llvm::raw_fd_ostream,std::default_delete<llvm::raw_fd_ostream>>' needs to have dll-interface to be used by clients of 'llvm::DotCfgChangeReporter' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::raw_fd_ostream,std::default_delete<llvm::raw_fd_ostream>>'
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(64,37): warning C4251: 'llvm::DomTreeNodeBase<llvm::BasicBlock>::Children': 'llvm::SmallVector<llvm::DomTreeNodeBase<llvm::BasicBlock> *,4>' needs to have dll-interface to be used by clients of 'llvm::DomTreeNodeBase<llvm::BasicBlock>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<llvm::DomTreeNodeBase<llvm::BasicBlock> *,4>'
+      C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(64,37):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Dominators.h(47,68):
+          see reference to class template instantiation 'llvm::DomTreeNodeBase<llvm::BasicBlock>' being compiled
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251: 'llvm::DominatorTreeBase<BlockT,false>::Roots': 'llvm::SmallVector<NodeT *,1>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<BlockT,false>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:             BlockT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         and [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:             NodeT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         and [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:             BlockT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<NodeT *,1>'
+          with
+          [
+              NodeT=llvm::BasicBlock
+          ]
+      C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Dominators.h(49,41):
+          see reference to class template instantiation 'llvm::DominatorTreeBase<BlockT,false>' being compiled
+          with
+          [
+              BlockT=llvm::BasicBlock
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251: 'llvm::DominatorTreeBase<BlockT,false>::DomTreeNodes': 'llvm::SmallVector<std::unique_ptr<llvm::DomTreeNodeBase<llvm::BasicBlock>,std::default_delete<llvm::DomTreeNodeBase<llvm::BasicBlock>>>,6>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<BlockT,false>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:             BlockT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<std::unique_ptr<llvm::DomTreeNodeBase<llvm::BasicBlock>,std::default_delete<llvm::DomTreeNodeBase<llvm::BasicBlock>>>,6>'
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251: 'llvm::DominatorTreeBase<BlockT,false>::NodeNumberMap': 'std::tuple<>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<BlockT,false>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:             BlockT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\tuple(210,7):
+      see declaration of 'std::tuple<>'
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251: 'llvm::DominatorTreeBase<NodeT,true>::Roots': 'llvm::SmallVector<NodeT *,4>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<NodeT,true>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:             NodeT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<NodeT *,4>'
+          with
+          [
+              NodeT=llvm::BasicBlock
+          ]
+      C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(259,43):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Dominators.h(51,40):
+          see reference to class template instantiation 'llvm::DominatorTreeBase<NodeT,true>' being compiled
+          with
+          [
+              NodeT=llvm::BasicBlock
+          ]
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251: 'llvm::DominatorTreeBase<NodeT,true>::DomTreeNodes': 'llvm::SmallVector<std::unique_ptr<llvm::DomTreeNodeBase<llvm::BasicBlock>,std::default_delete<llvm::DomTreeNodeBase<llvm::BasicBlock>>>,6>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<NodeT,true>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:             NodeT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(263,24): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<std::unique_ptr<llvm::DomTreeNodeBase<llvm::BasicBlock>,std::default_delete<llvm::DomTreeNodeBase<llvm::BasicBlock>>>,6>'
+  
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251: 'llvm::DominatorTreeBase<NodeT,true>::NodeNumberMap': 'std::tuple<>' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeBase<NodeT,true>' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:             NodeT=llvm::BasicBlock [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Support\GenericDomTree.h(268,7): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\tuple(210,7):
+      see declaration of 'std::tuple<>'
+  
+C:\msys64\mingw64\include\llvm\IR\Dominators.h(137,24): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Dominators.h(323,17): warning C4251: 'llvm::DominatorTreeWrapperPass::DT': 'llvm::DominatorTree' needs to have dll-interface to be used by clients of 'llvm::DominatorTreeWrapperPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Dominators.h(165,7):
+      see declaration of 'llvm::DominatorTree'
+  
+C:\msys64\mingw64\include\llvm\Transforms\IPO\DeadArgumentElimination.h(129,31): warning C4146: unary minus operator applied to unsigned type, result still unsigned [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267: 'argument': conversion from 'size_t' to 'llvm::DenseMapBase<llvm::DenseMap<llvm::Instruction *,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>,KeyT,ValueT,KeyInfoT,BucketT>::size_type', possible loss of data [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:             KeyT=llvm::Instruction *, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:             ValueT=unsigned int, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:             KeyInfoT=llvm::DenseMapInfo<llvm::Instruction *,void>, [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:             BucketT=llvm::detail::DenseMapPair<llvm::Instruction *,unsigned int> [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(81,25): warning C4267:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+  
+C:\msys64\mingw64\include\llvm\Transforms\InstCombine\InstCombine.h(69,23): warning C4251: 'llvm::InstructionCombiningPass::Worklist': 'llvm::InstructionWorklist' needs to have dll-interface to be used by clients of 'llvm::InstructionCombiningPass' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+  (compiling source file '../backend/Optimizer.cpp')
+      C:\msys64\mingw64\include\llvm\Transforms\Utils\InstructionWorklist.h(25,7):
+      see declaration of 'llvm::InstructionWorklist'
+  
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,23): error C2039: 'DeadStoreEliminationPass': is not a member of 'llvm' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+      C:\msys64\mingw64\include\llvm\Transforms\IPO\ConstantMerge.h(24,11):
+      see declaration of 'llvm'
+  
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,23): error C3861: 'DeadStoreEliminationPass': identifier not found [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9): error C2672: 'llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>::addPass': no matching overloaded function found [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9): error C2672:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9): error C2672:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9): error C2672:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9): error C2672:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(212,3):
+      could be 'enable_if<std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+          D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+          Failed to specialize function template 'enable_if<std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+              D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+              With the following template arguments:
+                  D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+                  'PassT=<error type>'
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(196,3):
+      or       'enable_if<!std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+          D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+          Failed to specialize function template 'enable_if<!std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+              D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+              With the following template arguments:
+                  D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(156,9):
+                  'PassT=<error type>'
+  
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,23): error C2039: 'DeadStoreEliminationPass': is not a member of 'llvm' [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+      C:\msys64\mingw64\include\llvm\Transforms\IPO\ConstantMerge.h(24,11):
+      see declaration of 'llvm'
+  
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,23): error C3861: 'DeadStoreEliminationPass': identifier not found [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9): error C2672: 'llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>::addPass': no matching overloaded function found [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9): error C2672:         with [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9): error C2672:         [ [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9): error C2672:             IRUnitT=llvm::Function [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9): error C2672:         ] [D:\Univ Comp\umc-sdk\full-build\backend_lib.vcxproj]
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(212,3):
+      could be 'enable_if<std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+          D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+          Failed to specialize function template 'enable_if<std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+              D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+              With the following template arguments:
+                  D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+                  'PassT=<error type>'
+      C:\msys64\mingw64\include\llvm\IR\PassManager.h(196,3):
+      or       'enable_if<!std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+          D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+          Failed to specialize function template 'enable_if<!std::is_same_v<PassT,llvm::PassManager<llvm::Function,llvm::AnalysisManager<IRUnitT>>>,void>::type llvm::PassManager<IRUnitT,llvm::AnalysisManager<IRUnitT>>::addPass(PassT &&)'
+          with
+          [
+              IRUnitT=llvm::Function
+          ]
+              D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+              With the following template arguments:
+                  D:\Univ Comp\umc-sdk\backend\Optimizer.cpp(192,9):
+                  'PassT=<error type>'
+  
+  ASTOptimizer.cpp
+  Generating Code...
+

@@ -4,9 +4,13 @@
 #include <memory>
 #include "LanguageDetector.h"
 #include "FrontendBase.h"
+#include "ASTNode.h"
+
+#ifdef ENABLE_LLVM
 #include "IRGenerator.h"
 #include "Optimizer.h"
 #include "CodeGenerator.h"
+#endif
 #include "Runtime.h"
 
 std::unique_ptr<FrontendBase> createFrontend(Language lang);
@@ -18,7 +22,9 @@ int main(int argc, char** argv) {
         std::cerr << "  -o <output>    Specify output file" << std::endl;
         std::cerr << "  -O <level>     Optimization level (0-3)" << std::endl;
         std::cerr << "  --emit-llvm    Emit LLVM IR instead of object code" << std::endl;
+        std::cerr << "  --run          Execute parsed AST directly (no compilation)" << std::endl;
         std::cerr << "Example: ucc hello.c" << std::endl;
+        std::cerr << "Example: ucc hello.py --run" << std::endl;
         return 1;
     }
 
@@ -26,6 +32,7 @@ int main(int argc, char** argv) {
     std::string outputFile = "a.out";
     int optLevel = 0;
     bool emitLLVM = false;
+    bool runAST = false;
 
     // Parse command line arguments
     for (int i = 2; i < argc; ++i) {
@@ -36,6 +43,8 @@ int main(int argc, char** argv) {
             optLevel = std::stoi(argv[++i]);
         } else if (arg == "--emit-llvm") {
             emitLLVM = true;
+        } else if (arg == "--run") {
+            runAST = true;
         }
     }
 
@@ -80,6 +89,25 @@ int main(int argc, char** argv) {
         std::cout << ast->toString() << std::endl;
     }
 
+    // If --run flag is specified, execute AST directly
+    if (runAST) {
+        if (!ast) {
+            std::cerr << "Error: No AST available for execution" << std::endl;
+            return 1;
+        }
+        
+        std::cout << "\n=== AST Execution Mode ===" << std::endl;
+        Runtime runtime;
+        if (runtime.executeAST(*ast)) {
+            std::cout << "AST execution completed successfully" << std::endl;
+            return 0;
+        } else {
+            std::cerr << "AST execution failed" << std::endl;
+            return 1;
+        }
+    }
+
+#ifdef ENABLE_LLVM
     // Generate IR
     IRGenerator irGenerator;
     std::string moduleName = filename.substr(0, filename.find_last_of('.'));
@@ -94,19 +122,36 @@ int main(int argc, char** argv) {
 
     // Optimize if requested
     if (optLevel > 0) {
+#ifdef ENABLE_LLVM
         Optimizer optimizer;
         auto module = irGenerator.getModule();
         if (optimizer.optimize(std::move(module))) {
             std::cout << "\n=== Optimized IR ===" << std::endl;
             optimizer.printOptimizedIR();
         }
+#else
+        std::cout << "\n=== Optimization Disabled ===" << std::endl;
+        std::cout << "Optimization requires LLVM support." << std::endl;
+#endif
     }
 
     // Generate code if not emitting LLVM
     if (!emitLLVM) {
+#ifdef ENABLE_LLVM
         CodeGenerator codeGen;
-        auto finalModule = optLevel > 0 ?
-            optimizer.getOptimizedModule() : irGenerator.getModule();
+        std::unique_ptr<llvm::Module> finalModule;
+        
+        if (optLevel > 0) {
+            // Get optimized module
+            Optimizer optimizer;
+            auto module = irGenerator.getModule();
+            if (optimizer.optimize(std::move(module))) {
+                finalModule = optimizer.getOptimizedModule();
+            }
+        } else {
+            // Get unoptimized module
+            finalModule = irGenerator.getModule();
+        }
 
         if (finalModule) {
             // Try JIT execution first for testing
@@ -118,18 +163,21 @@ int main(int argc, char** argv) {
                 if (codeGen.generateObjectCode(std::move(finalModule), outputFile)) {
                     std::cout << "\n=== Object Code Generation Complete ===" << std::endl;
                     std::cout << "Generated: " << outputFile << std::endl;
-
-                    // Try to run with runtime system
-                    Runtime runtime;
-                    if (runtime.loadExecutable(outputFile)) {
-                        if (runtime.execute(argc, argv)) {
-                            std::cout << "Runtime execution successful" << std::endl;
-                        }
-                    }
                 }
             }
         }
+#else
+        std::cout << "\n=== LLVM Support Disabled ===" << std::endl;
+        std::cout << "Parsing completed successfully, but code generation requires LLVM support." << std::endl;
+        std::cout << "Rebuild with LLVM integration enabled to use full compilation pipeline." << std::endl;
+        return 0;
+#endif
     }
+#else
+    std::cout << "\n=== LLVM Support Disabled ===" << std::endl;
+    std::cout << "Parsing completed successfully, but code generation requires LLVM support." << std::endl;
+    std::cout << "Rebuild with -DENABLE_LLVM=ON to enable full compilation pipeline." << std::endl;
+#endif
 
     return 0;
 }

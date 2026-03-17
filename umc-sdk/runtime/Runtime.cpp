@@ -1,4 +1,5 @@
 #include "Runtime.h"
+#include "ASTInterpreter.h"
 #include <iostream>
 #include <fstream>
 #include <cstring>
@@ -6,7 +7,7 @@
 #include <map>
 #include <algorithm>
 
-Runtime::Runtime() : loadedModule_(nullptr), memoryManager_(nullptr) {
+Runtime::Runtime() : loadedModule_(nullptr), memoryManager_(nullptr), astInterpreter_(nullptr) {
     initializeRuntime();
 }
 
@@ -42,6 +43,16 @@ bool Runtime::initializeRuntime() {
         return false;
     }
 
+    // Initialize AST interpreter
+    astInterpreter_ = new ASTInterpreter();
+    if (!astInterpreter_) {
+        std::cerr << "Error: Failed to initialize AST interpreter" << std::endl;
+        delete memoryManager_;
+        delete ioManager_;
+        delete executionContext_;
+        return false;
+    }
+
     std::cout << "uRuntime initialized successfully" << std::endl;
     return true;
 }
@@ -62,6 +73,11 @@ void Runtime::shutdownRuntime() {
     if (memoryManager_) {
         delete memoryManager_;
         memoryManager_ = nullptr;
+    }
+
+    if (astInterpreter_) {
+        delete astInterpreter_;
+        astInterpreter_ = nullptr;
     }
 }
 
@@ -109,6 +125,27 @@ bool Runtime::execute(int argc, char** argv) {
 
     std::cout << "Program execution completed with exit code: " << exitCode << std::endl;
     return exitCode == 0;
+}
+
+bool Runtime::executeAST(const ASTNode& ast) {
+    if (!astInterpreter_) {
+        std::cerr << "Error: AST interpreter not initialized" << std::endl;
+        return false;
+    }
+
+    std::cout << "Executing AST directly..." << std::endl;
+    std::cout << "AST to execute:" << std::endl;
+    std::cout << ast.toString() << std::endl;
+
+    bool success = astInterpreter_->execute(ast);
+    
+    if (success) {
+        std::cout << "AST execution completed successfully" << std::endl;
+    } else {
+        std::cout << "AST execution failed" << std::endl;
+    }
+    
+    return success;
 }
 
 void Runtime::cleanup() {
@@ -186,7 +223,7 @@ bool Runtime::parseExecutableFormat(const std::vector<char>& buffer) {
     return false;
 }
 
-bool Runtime::parseELF(const std::vector<char>& buffer) {
+bool Runtime::parseELF(const std::vector<char>& /*buffer*/) {
     // Simplified ELF parsing - extract entry point and sections
     // In real implementation, properly parse ELF header and sections
 
@@ -197,7 +234,7 @@ bool Runtime::parseELF(const std::vector<char>& buffer) {
     return true;
 }
 
-bool Runtime::parsePE(const std::vector<char>& buffer) {
+bool Runtime::parsePE(const std::vector<char>& /*buffer*/) {
     // Simplified PE parsing - extract entry point and sections
     // In real implementation, properly parse PE header
 
@@ -248,46 +285,6 @@ int Runtime::executeProgram() {
     return 0;
 }
 
-// MemoryManager implementation
-void* MemoryManager::allocate(size_t size) {
-    void* ptr = malloc(size);
-    if (ptr) {
-        allocations_[ptr] = size;
-    }
-    return ptr;
-}
-
-void MemoryManager::deallocate(void* ptr) {
-    if (ptr) {
-        auto it = allocations_.find(ptr);
-        if (it != allocations_.end()) {
-            allocations_.erase(it);
-        }
-        free(ptr);
-    }
-}
-
-void* MemoryManager::reallocate(void* ptr, size_t newSize) {
-    void* newPtr = realloc(ptr, newSize);
-    if (newPtr) {
-        // Update allocation record
-        auto it = allocations_.find(ptr);
-        if (it != allocations_.end()) {
-            allocations_.erase(it);
-        }
-        allocations_[newPtr] = newSize;
-    }
-    return newPtr;
-}
-
-size_t MemoryManager::getAllocatedSize() const {
-    size_t total = 0;
-    for (const auto& alloc : allocations_) {
-        total += alloc.second;
-    }
-    return total;
-}
-
 // IOManager implementation
 int IOManager::readInput(char* buffer, size_t size) {
     if (inputBuffer_.empty()) {
@@ -304,7 +301,7 @@ int IOManager::readInput(char* buffer, size_t size) {
     // Remove the copied part from buffer
     inputBuffer_.erase(inputBuffer_.begin(), inputBuffer_.begin() + copySize);
 
-    return copySize;
+    return static_cast<int>(copySize);
 }
 
 int IOManager::writeOutput(const char* buffer, size_t size) {
@@ -314,7 +311,7 @@ int IOManager::writeOutput(const char* buffer, size_t size) {
     // Also store in output buffer for potential retrieval
     outputBuffer_.insert(outputBuffer_.end(), buffer, buffer + size);
 
-    return size;
+    return static_cast<int>(size);
 }
 
 // ExecutionContext implementation

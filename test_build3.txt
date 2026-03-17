@@ -1,0 +1,22 @@
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  frontend.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\frontend.lib
+  runtime_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\runtime_lib.lib
+  backend_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\backend_lib.lib
+  test_language_detector.cpp
+  test_frontend.cpp
+D:\Univ Comp\umc-sdk\tests\test_language_detector.cpp(21,10): error C2039: 'cout': is not a member of 'std' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      see declaration of 'std'
+  
+D:\Univ Comp\umc-sdk\tests\test_language_detector.cpp(21,10): error C2065: 'cout': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\test_language_detector.cpp(21,59): error C2039: 'endl': is not a member of 'std' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      see declaration of 'std'
+  
+D:\Univ Comp\umc-sdk\tests\test_language_detector.cpp(21,59): error C2065: 'endl': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  test_ir_generator.cpp
+  test_optimizer.cpp
+  test_code_generator.cpp
+  Generating Code...
+

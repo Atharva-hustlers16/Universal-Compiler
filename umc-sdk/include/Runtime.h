@@ -9,6 +9,7 @@
 class MemoryManager;
 class IOManager;
 class ExecutionContext;
+class ASTInterpreter;
 
 class Runtime {
 public:
@@ -17,6 +18,7 @@ public:
 
     bool loadExecutable(const std::string& executablePath);
     bool execute(int argc, char** argv);
+    bool executeAST(const class ASTNode& ast);  // New method for AST execution
     void cleanup();
 
     // Runtime services
@@ -33,6 +35,7 @@ private:
     MemoryManager* memoryManager_;
     IOManager* ioManager_;
     ExecutionContext* executionContext_;
+    ASTInterpreter* astInterpreter_;
 
     bool initializeRuntime();
     void shutdownRuntime();
@@ -48,8 +51,8 @@ private:
 // Runtime component implementations
 class MemoryManager {
 public:
-    MemoryManager() = default;
-    ~MemoryManager() = default;
+    MemoryManager();
+    ~MemoryManager();
 
     void* allocate(size_t size);
     void deallocate(void* ptr);

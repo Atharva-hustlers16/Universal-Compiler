@@ -1,9 +1,10 @@
 #include "CodeGenerator.h"
 #include <llvm/Support/TargetSelect.h>
 #include <llvm/Support/FileSystem.h>
-#include <llvm/Support/Host.h>
+#include <llvm/TargetParser/Host.h>
 #include <llvm/Support/raw_ostream.h>
 #include <llvm/Target/TargetOptions.h>
+#include <llvm/MC/TargetRegistry.h>
 #include <llvm/IR/LegacyPassManager.h>
 #include <llvm/ExecutionEngine/ExecutionEngine.h>
 #include <llvm/ExecutionEngine/GenericValue.h>
@@ -12,6 +13,7 @@
 #include <llvm/ExecutionEngine/Orc/LLJIT.h>
 #include <iostream>
 #include <fstream>
+#include <optional>
 
 CodeGenerator::CodeGenerator() {
     initializeTarget();
@@ -46,7 +48,8 @@ bool CodeGenerator::initializeTarget() {
     llvm::TargetOptions opt;
     setTargetOptions();
 
-    llvm::Optional<llvm::Reloc::Model> relocModel = llvm::Optional<llvm::Reloc::Model>();
+    // Use std::optional instead of deprecated llvm::Optional
+    std::optional<llvm::Reloc::Model> relocModel;
     targetMachine_ = std::unique_ptr<llvm::TargetMachine>(
         target->createTargetMachine(targetTriple, "generic", "", opt, relocModel));
 
@@ -55,7 +58,6 @@ bool CodeGenerator::initializeTarget() {
 
 void CodeGenerator::setTargetOptions() {
     // Set optimization options for code generation
-    // These can be customized based on requirements
 }
 
 bool CodeGenerator::generateCode(std::unique_ptr<llvm::Module> module, const std::string& outputFile) {
@@ -78,7 +80,7 @@ bool CodeGenerator::generateCode(std::unique_ptr<llvm::Module> module, const std
     }
 
     llvm::legacy::PassManager pass;
-    auto fileType = llvm::CGFT_ObjectFile;
+    auto fileType = llvm::CodeGenFileType::ObjectFile;
 
     if (targetMachine_->addPassesToEmitFile(pass, dest, nullptr, fileType)) {
         std::cerr << "Error: TargetMachine can't emit a file of this type" << std::endl;
@@ -101,9 +103,6 @@ bool CodeGenerator::generateExecutable(std::unique_ptr<llvm::Module> module, con
         std::cerr << "Error: No module to generate executable from" << std::endl;
         return false;
     }
-
-    // For demonstration, we'll use JIT compilation
-    // In a real implementation, you'd link with runtime libraries
 
     std::cout << "Generating executable using JIT compilation..." << std::endl;
 
@@ -129,7 +128,7 @@ bool CodeGenerator::generateExecutable(std::unique_ptr<llvm::Module> module, con
 
     std::cout << "Found main function, preparing for execution..." << std::endl;
 
-    // Execute the function (simplified - no arguments)
+    // Execute the function
     std::vector<llvm::GenericValue> args;
     llvm::GenericValue result = executionEngine->runFunction(mainFunc, args);
 
@@ -141,12 +140,49 @@ bool CodeGenerator::generateExecutable(std::unique_ptr<llvm::Module> module, con
 
 bool CodeGenerator::generateAndExecute(std::unique_ptr<llvm::Module> module, int argc, char** argv) {
     if (!module) {
-        std::cerr << "Error: No module to execute" << std::endl;
+        std::cerr << "Error: No module provided for execution" << std::endl;
         return false;
     }
 
-    // Use JIT execution for testing
-    return generateExecutable(std::move(module), "jit_execution");
+    try {
+        // Initialize LLVM native target
+        llvm::InitializeNativeTarget();
+        llvm::InitializeNativeTargetAsmPrinter();
+        llvm::InitializeNativeTargetAsmParser();
+
+        // Create JIT execution engine
+        std::string error;
+        auto engine = llvm::EngineBuilder(std::move(module))
+            .setEngineKind(llvm::EngineKind::JIT)
+            .setErrorStr(&error)
+            .create();
+
+        if (!engine) {
+            std::cerr << "Failed to create execution engine: " << error << std::endl;
+            return false;
+        }
+
+        // Look for main function
+        auto mainFunc = engine->FindFunctionNamed("main");
+        if (!mainFunc) {
+            std::cerr << "Main function not found in module" << std::endl;
+            return false;
+        }
+
+        std::cout << "Executing via JIT..." << std::endl;
+
+        // Run main function
+        std::vector<std::string> argVec;
+        if (argc > 0 && argv) argVec.push_back(argv[0]);
+        engine->runFunctionAsMain(mainFunc, argVec, nullptr);
+
+        std::cout << "JIT execution completed successfully" << std::endl;
+        return true;
+
+    } catch (const std::exception& e) {
+        std::cerr << "JIT execution error: " << e.what() << std::endl;
+        return false;
+    }
 }
 
 std::string CodeGenerator::getTargetTriple() const {

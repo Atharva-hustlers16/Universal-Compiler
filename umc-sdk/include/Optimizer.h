@@ -12,7 +12,7 @@ public:
 
     bool optimize(std::unique_ptr<llvm::Module> module);
     bool optimize(std::unique_ptr<llvm::Module> module, int level);
-    std::unique_ptr<llvm::Module> getOptimizedModule() const { return std::move(optimizedModule_); }
+    std::unique_ptr<llvm::Module> getOptimizedModule() { return std::move(optimizedModule_); }
 
     void printOptimizedIR() const;
     void printOptimizationStats() const;

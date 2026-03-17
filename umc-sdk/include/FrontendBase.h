@@ -4,11 +4,7 @@
 #include <string>
 #include <memory>
 #include "LanguageDetector.h"
-
-struct ASTNode {
-    virtual ~ASTNode() = default;
-    virtual std::string toString() const = 0;
-};
+#include "ASTNode.h"
 
 class FrontendBase {
 public:

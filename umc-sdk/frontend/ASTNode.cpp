@@ -47,14 +47,10 @@ std::string getNodeTypeName(ASTNodeType type) {
     }
 }
 
-FunctionDeclNode::FunctionDeclNode(const std::string& name, const std::string& returnType)
-    : ASTNode(ASTNodeType::FUNCTION_DECL, name), name_(name), returnType_(returnType) {}
-
-VariableDeclNode::VariableDeclNode(const std::string& name, const std::string& type)
-    : ASTNode(ASTNodeType::VARIABLE_DECL, name), name_(name), type_(type) {}
-
-BinaryOpNode::BinaryOpNode(const std::string& op, std::unique_ptr<ASTNode> left, std::unique_ptr<ASTNode> right)
-    : ASTNode(ASTNodeType::BINARY_OP, op), op_(op) {
-    addChild(std::move(left));
-    addChild(std::move(right));
+std::unique_ptr<ASTNode> ASTNode::clone() const {
+    auto cloned = std::make_unique<ASTNode>(type_, value_);
+    for (const auto& child : children_) {
+        cloned->addChild(child->clone());
+    }
+    return cloned;
 }

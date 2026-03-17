@@ -1,0 +1,250 @@
+Detected language: Java
+Using enhanced fallback Java parser (ANTLR4 not available)
+
+=== Generated AST ===
+Program () {
+  FunctionDecl (HelloWorld) {
+    FunctionDecl (calculate) {
+      Block () {
+        VariableDecl (a) {
+          BinaryOp (+) {
+            Literal (10)
+            Literal (20)
+          }
+        }
+        VariableDecl (b) {
+          BinaryOp (*) {
+            Identifier (a)
+            Literal (1)
+          }
+        }
+        VariableDecl (c) {
+          BinaryOp (-) {
+            Identifier (b)
+            Literal (0)
+          }
+        }
+        VariableDecl (d) {
+          BinaryOp (*) {
+            Literal (5)
+            Literal (0)
+          }
+        }
+        ReturnStmt (return) {
+          BinaryOp (+) {
+            Identifier (a)
+            BinaryOp (+) {
+              Identifier (b)
+              BinaryOp (+) {
+                Identifier (c)
+                Identifier (d)
+              }
+            }
+          }
+        }
+      }
+    }
+    FunctionDecl (multiply) {
+      VariableDecl (int x)
+      VariableDecl (int y)
+      Block () {
+        ReturnStmt (return) {
+          BinaryOp (*) {
+            Identifier (x)
+            Identifier (y)
+          }
+        }
+      }
+    }
+    FunctionDecl (main) {
+      VariableDecl (String[] args)
+      Block () {
+        FunctionCall (System.out.println) {
+          Literal ("Hello from UMC-SDK Java Compiler!")
+        }
+        VariableDecl (result) {
+          FunctionCall (calculate)
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Calculated result: ")
+            Identifier (result)
+          }
+        }
+        VariableDecl (product) {
+          FunctionCall (multiply) {
+            Identifier (result)
+            Literal (2)
+          }
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Product: ")
+            Identifier (product)
+          }
+        }
+        IfStmt (if) {
+          BinaryOp (>) {
+            Identifier (args.length)
+            Literal (0)
+          }
+          Block () {
+            FunctionCall (System.out.println) {
+              BinaryOp (+) {
+                Literal ("Arguments provided: ")
+                Identifier (args.length)
+              }
+            }
+          }
+        }
+        FunctionCall (System.out.println) {
+          Literal ("No arguments provided")
+        }
+        Identifier (})
+      }
+    }
+  }
+}
+
+
+=== AST Execution Mode ===
+Initializing uRuntime environment...
+uRuntime initialized successfully
+Executing AST directly...
+AST to execute:
+Program () {
+  FunctionDecl (HelloWorld) {
+    FunctionDecl (calculate) {
+      Block () {
+        VariableDecl (a) {
+          BinaryOp (+) {
+            Literal (10)
+            Literal (20)
+          }
+        }
+        VariableDecl (b) {
+          BinaryOp (*) {
+            Identifier (a)
+            Literal (1)
+          }
+        }
+        VariableDecl (c) {
+          BinaryOp (-) {
+            Identifier (b)
+            Literal (0)
+          }
+        }
+        VariableDecl (d) {
+          BinaryOp (*) {
+            Literal (5)
+            Literal (0)
+          }
+        }
+        ReturnStmt (return) {
+          BinaryOp (+) {
+            Identifier (a)
+            BinaryOp (+) {
+              Identifier (b)
+              BinaryOp (+) {
+                Identifier (c)
+                Identifier (d)
+              }
+            }
+          }
+        }
+      }
+    }
+    FunctionDecl (multiply) {
+      VariableDecl (int x)
+      VariableDecl (int y)
+      Block () {
+        ReturnStmt (return) {
+          BinaryOp (*) {
+            Identifier (x)
+            Identifier (y)
+          }
+        }
+      }
+    }
+    FunctionDecl (main) {
+      VariableDecl (String[] args)
+      Block () {
+        FunctionCall (System.out.println) {
+          Literal ("Hello from UMC-SDK Java Compiler!")
+        }
+        VariableDecl (result) {
+          FunctionCall (calculate)
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Calculated result: ")
+            Identifier (result)
+          }
+        }
+        VariableDecl (product) {
+          FunctionCall (multiply) {
+            Identifier (result)
+            Literal (2)
+          }
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Product: ")
+            Identifier (product)
+          }
+        }
+        IfStmt (if) {
+          BinaryOp (>) {
+            Identifier (args.length)
+            Literal (0)
+          }
+          Block () {
+            FunctionCall (System.out.println) {
+ucc.exe : Runtime 
+Error: Argument count 
+mismatch for function: 
+main
+At line:1 char:79
++ ... j 4; $out = & 
+"d:\Univ Comp\umc-sdk\f
+ull-build\Release\ucc.e
+xe" "d:\U ...
++                 ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Runtime Error   
+ : ... function: ma    
+in:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+AST execution failed
+              BinaryOp (+) {
+                Literal ("Arguments provided: ")
+                Identifier (args.length)
+              }
+            }
+          }
+        }
+        FunctionCall (System.out.println) {
+          Literal ("No arguments provided")
+        }
+        Identifier (})
+      }
+    }
+  }
+}
+
+Defined function: calculate with 0 parameters
+Defined function: multiply with 2 parameters
+Defined function: main with 1 parameters
+
+=== Executing main() function ===
+AST execution failed
+Shutting down uRuntime environment...
+

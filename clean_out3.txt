@@ -1,0 +1,118 @@
+Detected language: Java
+Using enhanced fallback Java parser (ANTLR4 not available)
+Extracted classBody length: 1083
+Found potential method keyword at 58
+Extracted method name: 'calculate'
+Successfully extracted method body for calculate
+Found potential method keyword at 461
+Extracted method name: 'multiply'
+Successfully extracted method body for multiply
+Found potential method keyword at 542
+Extracted method name: 'main'
+Successfully extracted method body for main
+Class 'HelloWorld' children before moving: 3
+
+=== Generated AST ===
+Program () {
+  FunctionDecl (HelloWorld) {
+    FunctionDecl (calculate) {
+      Block () {
+        VariableDecl (a) {
+          BinaryOp (+) {
+            Literal (10)
+            Literal (20)
+          }
+        }
+        VariableDecl (b) {
+          BinaryOp (*) {
+            Identifier (a)
+            Literal (1)
+          }
+        }
+        VariableDecl (c) {
+          BinaryOp (-) {
+            Identifier (b)
+            Literal (0)
+          }
+        }
+        VariableDecl (d) {
+          BinaryOp (*) {
+            Literal (5)
+            Literal (0)
+          }
+        }
+        ReturnStmt (return) {
+          BinaryOp (+) {
+            Identifier (a)
+            BinaryOp (+) {
+              Identifier (b)
+              BinaryOp (+) {
+                Identifier (c)
+                Identifier (d)
+              }
+            }
+          }
+        }
+      }
+    }
+    FunctionDecl (multiply) {
+      Block () {
+        ReturnStmt (return) {
+          BinaryOp (*) {
+            Identifier (x)
+            Identifier (y)
+          }
+        }
+      }
+    }
+    FunctionDecl (main) {
+      Block () {
+        FunctionCall (System.out.println) {
+          Literal ("Hello from UMC-SDK Java Compiler!")
+        }
+        VariableDecl (result) {
+          Identifier (calculate())
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Calculated result: ")
+            Identifier (result)
+          }
+        }
+        VariableDecl (product) {
+          Identifier (multiply(result, 2))
+        }
+        FunctionCall (System.out.println) {
+          BinaryOp (+) {
+            Literal ("Product: ")
+            Identifier (product)
+          }
+        }
+        IfStmt (if) {
+          BinaryOp (>) {
+            Identifier (args.length)
+            Literal (0)
+          }
+          Block () {
+            FunctionCall (System.out.println) {
+              BinaryOp (+) {
+                Literal ("Arguments provided: ")
+                Identifier (args.length)
+              }
+            }
+          }
+        }
+        FunctionCall (System.out.println) {
+          Literal ("No arguments provided")
+        }
+        Identifier (})
+      }
+    }
+  }
+}
+
+
+=== LLVM Support Disabled ===
+Parsing completed successfully, but code generation requires LLVM support.
+Rebuild with -DENABLE_LLVM=ON to enable full compilation pipeline.
+

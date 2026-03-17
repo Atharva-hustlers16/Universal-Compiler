@@ -1,0 +1,24 @@
+Detected language: Java
+Using enhanced fallback Java parser (ANTLR4 not available)
+Extracted classBody length: 1083
+Found potential method keyword at 58
+Extracted method name: 'calculate'
+Successfully extracted method body for calculate
+Found potential method keyword at 461
+Extracted method name: 'multiply'
+Successfully extracted method body for multiply
+Found potential method keyword at 542
+Extracted method name: 'main'
+Successfully extracted method body for main
+Class 'HelloWorld' children before moving: 3
+
+=== Generated AST ===
+Program () {
+  FunctionDecl (HelloWorld)
+}
+
+
+=== LLVM Support Disabled ===
+Parsing completed successfully, but code generation requires LLVM support.
+Rebuild with -DENABLE_LLVM=ON to enable full compilation pipeline.
+

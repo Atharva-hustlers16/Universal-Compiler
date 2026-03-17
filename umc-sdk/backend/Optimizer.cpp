@@ -18,8 +18,11 @@
 #include <llvm/Transforms/Scalar/LoopUnrollPass.h>
 #include <llvm/Transforms/Scalar/LoopDeletion.h>
 #include <llvm/Transforms/Scalar/LoopInstSimplify.h>
-#include <llvm/Transforms/Scalar/LoopRotate.h>
+#include <llvm/Transforms/Scalar/LoopRotation.h>
 #include <llvm/Transforms/Scalar/LoopSimplifyCFG.h>
+#include <llvm/Transforms/InstCombine/InstCombine.h>
+#include <llvm/Transforms/IPO/ConstantMerge.h>
+#include <llvm/Transforms/Scalar/DeadStoreElimination.h>
 #include <iostream>
 
 Optimizer::Optimizer() = default;
@@ -45,9 +48,10 @@ bool Optimizer::optimize(std::unique_ptr<llvm::Module> module) {
     llvm::PassBuilder PB;
 
     // Register standard instrumentations
-    llvm::StandardInstrumentations SI(*optimizedModule_->getContext(),
-                                    /*DebugLogging*/ true);
-    SI.registerCallbacks(PB, &MAM);
+    llvm::StandardInstrumentations SI(optimizedModule_->getContext(),
+                                    /*DebugLogging*/ false);
+    llvm::PassInstrumentationCallbacks PIC;
+    SI.registerCallbacks(PIC, &MAM);
 
     // Register analysis passes
     PB.registerModuleAnalyses(MAM);
@@ -149,16 +153,16 @@ llvm::ModulePassManager Optimizer::createO2Pipeline(
     FPM.addPass(llvm::ReassociatePass());  // Reassociation
     FPM.addPass(llvm::GVNPass());  // Global value numbering
     FPM.addPass(llvm::SimplifyCFGPass());  // Simplify control flow
-    FPM.addPass(llvm::DeadStoreEliminationPass());  // Dead store elimination
+    FPM.addPass(llvm::DSEPass());  // Dead store elimination
 
     // Loop passes for O2
     llvm::LoopPassManager LPM;
     LPM.addPass(llvm::LoopInstSimplifyPass());
     LPM.addPass(llvm::LoopSimplifyCFGPass());
     LPM.addPass(llvm::LoopRotatePass());
-    LPM.addPass(llvm::LoopUnrollPass());  // Loop unrolling
 
     FPM.addPass(llvm::createFunctionToLoopPassAdaptor(std::move(LPM)));
+    FPM.addPass(llvm::LoopUnrollPass());  // Loop unrolling (Loop-level pass, added at FPM level)
 
     MPM.addPass(llvm::createModuleToFunctionPassAdaptor(std::move(FPM)));
 
@@ -185,7 +189,7 @@ llvm::ModulePassManager Optimizer::createO3Pipeline(
     FPM.addPass(llvm::ReassociatePass());  // Reassociation
     FPM.addPass(llvm::GVNPass());  // Global value numbering
     FPM.addPass(llvm::SCCPPass());  // Sparse conditional constant propagation
-    FPM.addPass(llvm::DeadStoreEliminationPass());  // Dead store elimination
+    FPM.addPass(llvm::DSEPass());  // Dead store elimination
     FPM.addPass(llvm::EarlyCSEPass());  // Early common subexpression elimination
     FPM.addPass(llvm::SimplifyCFGPass());  // Simplify control flow
 
@@ -194,10 +198,10 @@ llvm::ModulePassManager Optimizer::createO3Pipeline(
     LPM.addPass(llvm::LoopInstSimplifyPass());
     LPM.addPass(llvm::LoopSimplifyCFGPass());
     LPM.addPass(llvm::LoopRotatePass());
-    LPM.addPass(llvm::LoopUnrollPass(llvm::LoopUnrollOptions().setPartialThreshold(300)));
     LPM.addPass(llvm::LoopDeletionPass());
 
     FPM.addPass(llvm::createFunctionToLoopPassAdaptor(std::move(LPM)));
+    FPM.addPass(llvm::LoopUnrollPass());  // Loop unrolling (Loop-level pass, added at FPM level)
 
     MPM.addPass(llvm::createModuleToFunctionPassAdaptor(std::move(FPM)));
 
@@ -221,16 +225,19 @@ void Optimizer::printOptimizationStats() const {
 
     std::cout << "\n=== Optimization Statistics ===" << std::endl;
     std::cout << "Functions: " << optimizedModule_->getFunctionList().size() << std::endl;
-    std::cout << "Global Variables: " << optimizedModule_->getGlobalList().size() << std::endl;
+    std::cout << "Global Variables: ";
+    size_t gvCount = 0;
+    for (auto& GV : optimizedModule_->globals()) { (void)GV; gvCount++; }
+    std::cout << gvCount << std::endl;
 
     // Count basic blocks and instructions
     size_t totalBlocks = 0;
     size_t totalInstructions = 0;
 
     for (auto& func : *optimizedModule_) {
-        totalBlocks += func.getBasicBlockList().size();
         for (auto& bb : func) {
-            totalInstructions += bb.getInstList().size();
+            totalBlocks++;
+            for (auto& inst : bb) { (void)inst; totalInstructions++; }
         }
     }
 

@@ -1,0 +1,600 @@
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  frontend.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\frontend.lib
+  runtime_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\runtime_lib.lib
+  backend_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\backend_lib.lib
+  test_main.cpp
+C:\msys64\mingw64\include\llvm\ADT\DenseMapInfo.h(160,33): warning C4244: 'return': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(466,31): warning C4251: 'llvm::raw_fd_ostream::HasColors': 'std::optional<bool>' needs to have dll-interface to be used by clients of 'llvm::raw_fd_ostream' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\optional(227,7):
+      see declaration of 'std::optional<bool>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(478,19): warning C4251: 'llvm::raw_fd_ostream::EC': 'std::error_code' needs to have dll-interface to be used by clients of 'llvm::raw_fd_ostream' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\system_error(167,19):
+      see declaration of 'std::error_code'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(748,24): warning C4251: 'llvm::buffer_ostream::Buffer': 'llvm::SmallVector<char,0>' needs to have dll-interface to be used by clients of 'llvm::buffer_ostream' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<char,0>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(758,32): warning C4251: 'llvm::buffer_unique_ostream::OS': 'std::unique_ptr<llvm::raw_ostream,std::default_delete<llvm::raw_ostream>>' needs to have dll-interface to be used by clients of 'llvm::buffer_unique_ostream' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::raw_ostream,std::default_delete<llvm::raw_ostream>>'
+  
+C:\msys64\mingw64\include\llvm\Support\raw_ostream.h(759,24): warning C4251: 'llvm::buffer_unique_ostream::Buffer': 'llvm::SmallVector<char,0>' needs to have dll-interface to be used by clients of 'llvm::buffer_unique_ostream' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\SmallVector.h(1196,22):
+      see declaration of 'llvm::SmallVector<char,0>'
+  
+C:\msys64\mingw64\include\llvm\IR\DerivedTypes.h(482,22): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DerivedTypes.h(513,24): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1111,30): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1170,29): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Metadata.h(1537,16): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DIExpression>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DIExpression>' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(121,72):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DIExpression>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DILabel>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DILabel>' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(122,67):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DILabel>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21): warning C4251: 'llvm::DbgRecordParamRef<llvm::DILocalVariable>::Ref': 'llvm::TypedTrackingMDRef<llvm::MDNode>' needs to have dll-interface to be used by clients of 'llvm::DbgRecordParamRef<llvm::DILocalVariable>' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\TrackingMDRef.h(106,26):
+      see declaration of 'llvm::TypedTrackingMDRef<llvm::MDNode>'
+      C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(78,21):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\DebugProgramInstruction.h(123,75):
+          see reference to class template instantiation 'llvm::DbgRecordParamRef<llvm::DILocalVariable>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\BasicBlock.h(71,21): warning C4146: unary minus operator applied to unsigned type, result still unsigned [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(90,7): warning C4251: 'llvm::Function::SymTab': 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>' needs to have dll-interface to be used by clients of 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(91,17): warning C4251: 'llvm::Function::AttributeSets': 'llvm::AttributeList' needs to have dll-interface to be used by clients of 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Attributes.h(506,7):
+      see declaration of 'llvm::AttributeList'
+  
+C:\msys64\mingw64\include\llvm\IR\Function.h(64,34): warning C4275: non dll-interface class 'llvm::GlobalObject' used as base for dll-interface class 'llvm::Function' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\GlobalObject.h(28,7):
+      see declaration of 'llvm::GlobalObject'
+      C:\msys64\mingw64\include\llvm\IR\Function.h(64,16):
+      see declaration of 'llvm::Function'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(182,19): warning C4251: 'llvm::Module::NamedMDList': 'llvm::iplist<llvm::NamedMDNode>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\ilist.h(327,7):
+      see declaration of 'llvm::iplist<llvm::NamedMDNode>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(183,15): warning C4251: 'llvm::Module::GlobalScopeAsm': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(184,37): warning C4251: 'llvm::Module::ValSymTab': 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::ValueSymbolTable,std::default_delete<llvm::ValueSymbolTable>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(185,20): warning C4251: 'llvm::Module::ComdatSymTab': 'llvm::StringMap<llvm::Comdat,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<llvm::Comdat,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(187,3): warning C4251: 'llvm::Module::OwnedMemoryBuffer': 'std::unique_ptr<llvm::MemoryBuffer,std::default_delete<llvm::MemoryBuffer>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::MemoryBuffer,std::default_delete<llvm::MemoryBuffer>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(190,3): warning C4251: 'llvm::Module::Materializer': 'std::unique_ptr<llvm::GVMaterializer,std::default_delete<llvm::GVMaterializer>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(3347,7):
+      see declaration of 'std::unique_ptr<llvm::GVMaterializer,std::default_delete<llvm::GVMaterializer>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(191,15): warning C4251: 'llvm::Module::ModuleID': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(192,15): warning C4251: 'llvm::Module::SourceFileName': 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(541,7):
+      see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(197,10): warning C4251: 'llvm::Module::TargetTriple': 'llvm::Triple' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\TargetParser\Triple.h(47,7):
+      see declaration of 'llvm::Triple'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(198,21): warning C4251: 'llvm::Module::NamedMDSymTab': 'llvm::StringMap<llvm::NamedMDNode *,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<llvm::NamedMDNode *,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(199,14): warning C4251: 'llvm::Module::DL': 'llvm::DataLayout' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\DataLayout.h(63,7):
+      see declaration of 'llvm::DataLayout'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(201,7): warning C4251: 'llvm::Module::CurrentIntrinsicIds': 'llvm::StringMap<unsigned int,llvm::MallocAllocator>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\StringMap.h(127,38):
+      see declaration of 'llvm::StringMap<unsigned int,llvm::MallocAllocator>'
+  
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251: 'llvm::Module::UniquedIntrinsicNames': 'llvm::DenseMap<std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>' needs to have dll-interface to be used by clients of 'llvm::Module' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         with [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         [ [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:             KeyT=std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>, [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:             ValueT=unsigned int [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\IR\Module.h(204,7): warning C4251:         ] [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\DenseMap.h(777,7):
+      see declaration of 'llvm::DenseMap<std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,unsigned int,llvm::DenseMapInfo<KeyT,void>,llvm::detail::DenseMapPair<KeyT,ValueT>>'
+          with
+          [
+              KeyT=std::pair<llvm::Intrinsic::ID,const llvm::FunctionType *>,
+              ValueT=unsigned int
+          ]
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1241,25): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1263,14): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1290,48): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1325,14): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(1997,25): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(2032,53): warning C4244: 'argument': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\InstrTypes.h(2316,28): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Constants.h(808,66): warning C4244: 'argument': conversion from 'uint64_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(78,7): warning C4624: 'llvm::OverflowingBinaryOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(154,7): warning C4624: 'llvm::PossiblyExactOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(200,7): warning C4624: 'llvm::FPMathOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,13>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(400,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,13>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(399,7): warning C4624: 'llvm::AddOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,15>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(403,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,15>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(402,7): warning C4624: 'llvm::SubOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,17>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(406,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,17>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(405,7): warning C4624: 'llvm::MulOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,25>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(409,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::OverflowingBinaryOperator,25>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(408,7): warning C4624: 'llvm::ShlOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::PossiblyExactOperator,27>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(413,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::PossiblyExactOperator,27>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(412,7): warning C4624: 'llvm::AShrOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::PossiblyExactOperator,26>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(416,12):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::PossiblyExactOperator,26>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(415,7): warning C4624: 'llvm::LShrOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::Operator,34>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(420,14):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::Operator,34>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(419,7): warning C4624: 'llvm::GEPOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(513,20): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::Operator,47>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(562,14):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::Operator,47>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(561,7): warning C4624: 'llvm::PtrToIntOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::Operator,49>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(599,14):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::Operator,49>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(598,7): warning C4624: 'llvm::BitCastOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7): warning C4624: 'llvm::ConcreteOperator<llvm::Operator,50>': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Operator.h(385,7):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Operator.h(623,14):
+          see reference to class template instantiation 'llvm::ConcreteOperator<llvm::Operator,50>' being compiled
+  
+C:\msys64\mingw64\include\llvm\IR\Operator.h(622,7): warning C4624: 'llvm::AddrSpaceCastOperator': destructor was implicitly defined as deleted [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\CFG.h(125,23): warning C4244: 'return': conversion from '__int64' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(1555,74): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2018,26): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2029,26): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2052,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2084,76): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2125,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2146,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2170,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2219,77): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(2243,54): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3301,24): warning C4244: 'argument': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3768,37): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3914,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3914,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3926,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3926,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+  
+C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(384,36): warning C4275: non dll-interface class 'llvm::ValueHandleBase' used as base for dll-interface class 'llvm::CallbackVH' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(30,7):
+      see declaration of 'llvm::ValueHandleBase'
+      C:\msys64\mingw64\include\llvm\IR\ValueHandle.h(384,16):
+      see declaration of 'llvm::CallbackVH'
+  
+C:\msys64\mingw64\include\llvm\IR\IRBuilder.h(76,38): warning C4251: 'llvm::IRBuilderCallbackInserter::Callback': 'std::function<void (llvm::Instruction *)>' needs to have dll-interface to be used by clients of 'llvm::IRBuilderCallbackInserter' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional(1089,7):
+      see declaration of 'std::function<void (llvm::Instruction *)>'
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3278,52): warning C4244: 'return': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Instructions.h(3278,52):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3291,16):
+          see reference to class template instantiation 'llvm::SwitchInst::CaseHandleImpl<llvm::SwitchInst,llvm::ConstantInt,llvm::BasicBlock>' being compiled
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3274,14):
+          while compiling class template member function 'unsigned int llvm::SwitchInst::CaseHandleImpl<llvm::SwitchInst,llvm::ConstantInt,llvm::BasicBlock>::getSuccessorIndex(void) const'
+              C:\msys64\mingw64\include\llvm\IR\Instructions.h(3306,23):
+              see the first reference to 'llvm::SwitchInst::CaseHandleImpl<llvm::SwitchInst,llvm::ConstantInt,llvm::BasicBlock>::getSuccessorIndex' in 'llvm::SwitchInst::CaseHandle::setSuccessor'
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3259,64): warning C4244: 'argument': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Instructions.h(3259,64):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3256,19):
+          while compiling class template member function 'ConstantIntT *llvm::SwitchInst::CaseHandleImpl<llvm::SwitchInst,ConstantIntT,llvm::BasicBlock>::getCaseValue(void) const'
+          with
+          [
+              ConstantIntT=llvm::ConstantInt
+          ]
+              C:\msys64\mingw64\include\llvm\IR\Instructions.h(3491,10):
+              see the first reference to 'llvm::SwitchInst::CaseHandleImpl<llvm::SwitchInst,llvm::ConstantInt,llvm::BasicBlock>::getCaseValue' in 'llvm::SwitchInst::findCaseDest'
+  
+C:\msys64\mingw64\include\llvm\IR\Instructions.h(3271,44): warning C4244: 'return': conversion from 'const ptrdiff_t' to 'unsigned int', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\IR\Instructions.h(3271,44):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3420,15):
+          see reference to class template instantiation 'llvm::SwitchInst::CaseIteratorImpl<llvm::SwitchInst::ConstCaseHandle>' being compiled
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3315,47):
+          see reference to class template instantiation 'llvm::SwitchInst::CaseHandleImpl<const llvm::SwitchInst,const llvm::ConstantInt,const llvm::BasicBlock>' being compiled
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(3271,14):
+          while compiling class template member function 'unsigned int llvm::SwitchInst::CaseHandleImpl<const llvm::SwitchInst,const llvm::ConstantInt,const llvm::BasicBlock>::getCaseIndex(void) const'
+              C:\msys64\mingw64\include\llvm\IR\Instructions.h(3463,5):
+              see the first reference to 'llvm::SwitchInst::CaseHandleImpl<const llvm::SwitchInst,const llvm::ConstantInt,const llvm::BasicBlock>::getCaseIndex' in 'llvm::SwitchInst::findCaseValue'
+  
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244: 'argument': conversion from 'const StorageType' to 'T', possible loss of data [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         with [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         [ [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:             StorageType=unsigned short [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         ] [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         and [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         [ [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:             T=unsigned char [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22): warning C4244:         ] [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/test_main.cpp')
+      C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(180,22):
+      the template instantiation context (the oldest one first) is
+          C:\msys64\mingw64\include\llvm\IR\Instructions.h(567,32):
+          see reference to function template instantiation 'bool llvm::Instruction::getSubclassData<llvm::AtomicCmpXchgInst::WeakField>(void) const' being compiled
+          C:\msys64\mingw64\include\llvm\IR\Instruction.h(1079,22):
+          see reference to function template instantiation 'bool llvm::Bitfield::get<BitfieldElement,unsigned short>(StorageType)' being compiled
+          with
+          [
+              BitfieldElement=llvm::AtomicCmpXchgInst::WeakField,
+              StorageType=unsigned short
+          ]
+          C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(256,52):
+          see reference to class template instantiation 'llvm::bitfields_details::Impl<Bitfield,StorageType>' being compiled
+          with
+          [
+              Bitfield=llvm::AtomicCmpXchgInst::WeakField,
+              StorageType=unsigned short
+          ]
+          C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(178,22):
+          while compiling class template member function 'unsigned char llvm::bitfields_details::Impl<Bitfield,StorageType>::extract(StorageType)'
+          with
+          [
+              Bitfield=llvm::AtomicCmpXchgInst::WeakField,
+              StorageType=unsigned short
+          ]
+              C:\msys64\mingw64\include\llvm\ADT\Bitfields.h(256,5):
+              see the first reference to 'llvm::bitfields_details::Impl<Bitfield,StorageType>::extract' in 'llvm::Bitfield::get'
+          with
+          [
+              Bitfield=llvm::AtomicCmpXchgInst::WeakField,
+              StorageType=unsigned short
+          ]
+              C:\msys64\mingw64\include\llvm\IR\Instruction.h(1079,22):
+              see the first reference to 'llvm::Bitfield::get' in 'llvm::Instruction::getSubclassData'
+  
+  TestValidator.cpp
+  TestFramework.cpp
+D:\Univ Comp\umc-sdk\include\TestFramework.h(67,10): error C2039: 'map': is not a member of 'std' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\chrono(45,1):
+      see declaration of 'std'
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(67,13): error C2143: syntax error: missing ';' before '<' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(67,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(67,61): error C2238: unexpected token(s) preceding ';' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(68,10): error C2039: 'map': is not a member of 'std' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\chrono(45,1):
+      see declaration of 'std'
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(68,13): error C2143: syntax error: missing ';' before '<' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(68,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\include\TestFramework.h(68,46): error C2238: unexpected token(s) preceding ';' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  (compiling source file '../../tests/TestFramework.cpp')
+  
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(17,5): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(29,5): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(36,43): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(36,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(36,56): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(37,27): error C2065: 'suiteName': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(50,15): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(51,9): error C3536: 'it': cannot be used before it is initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(51,15): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(59,24): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(59,22): error C2530: 'suite': references must be initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(68,22): error C2530: 'test': references must be initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(68,22): error C3531: 'test': a symbol whose type contains 'auto' must have an initializer [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(68,27): error C2143: syntax error: missing ';' before ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(68,39): error C2143: syntax error: missing ';' before ')' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,29): error C2664: 'TestFramework::TestResult TestFramework::runTest(const std::string &,const TestFramework::TestCase &)': cannot convert argument 2 from '<error type>' to 'const TestFramework::TestCase &' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+      D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+      Reason: cannot convert from '<error type>' to 'const TestFramework::TestCase'
+      D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+      'TestFramework::TestCase::TestCase': no overloaded function could convert all the argument types
+          D:\Univ Comp\umc-sdk\include\TestFramework.h(65,5):
+          could be 'TestFramework::TestCase::TestCase(TestFramework::TestCase &&)'
+              D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+              'TestFramework::TestCase::TestCase(TestFramework::TestCase &&)': cannot convert argument 1 from '<error type>' to 'TestFramework::TestCase &&'
+                  D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+                  Reason: cannot convert from '<error type>' to 'TestFramework::TestCase'
+                  D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+                  Conversion requires a second user-defined-conversion operator or constructor
+          D:\Univ Comp\umc-sdk\include\TestFramework.h(65,5):
+          or       'TestFramework::TestCase::TestCase(const TestFramework::TestCase &)'
+              D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+              'TestFramework::TestCase::TestCase(const TestFramework::TestCase &)': cannot convert argument 1 from '<error type>' to 'const TestFramework::TestCase &'
+                  D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+                  Reason: cannot convert from '<error type>' to 'const TestFramework::TestCase'
+                  D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+                  Conversion requires a second user-defined-conversion operator or constructor
+          D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,48):
+          while trying to match the argument list '(<error type>)'
+      D:\Univ Comp\umc-sdk\include\TestFramework.h(72,16):
+      see declaration of 'TestFramework::runTest'
+      D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(69,29):
+      while trying to match the argument list '(const std::string, <error type>)'
+  
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(90,20): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(91,9): error C3536: 'suiteIt': cannot be used before it is initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(91,20): error C2065: 'testSuites_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(96,24): error C2672: 'std::find_if': no matching overloaded function found [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(514,19):
+      could be '_FwdIt std::find_if(_ExPo &&,_FwdIt,_FwdIt,_Pr) noexcept'
+          D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(96,24):
+          '_FwdIt std::find_if(_ExPo &&,_FwdIt,_FwdIt,_Pr) noexcept': expects 4 arguments - 2 provided
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility(6619,31):
+      or       '_InIt std::find_if(_InIt,const _InIt,_Pr)'
+          D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(96,24):
+          '_InIt std::find_if(_InIt,const _InIt,_Pr)': expects 3 arguments - 2 provided
+  
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(101,9): error C3536: 'testIt': cannot be used before it is initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(108,44): error C2100: you cannot dereference an operand of type '<error type>' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(181,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(181,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(181,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(182,23): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(183,24): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(184,24): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(185,26): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(187,22): error C2065: 'suiteName': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(187,43): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(187,71): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(189,23): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(189,55): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(189,75): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(203,47): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(203,45): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(203,57): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(204,39): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(204,30): error C2530: 'result': references must be initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(204,30): error C3531: 'result': a symbol whose type contains 'auto' must have an initializer [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(204,37): error C2143: syntax error: missing ';' before ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(204,52): error C2143: syntax error: missing ';' before ')' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(206,42): error C2065: 'suiteName': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(220,15): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(221,9): error C3536: 'it': cannot be used before it is initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(221,15): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(225,28): error C2530: 'suite': references must be initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(244,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(244,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(244,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(245,35): error C2065: 'suiteName': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(246,36): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(247,31): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(248,31): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(250,18): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(250,50): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(250,70): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(252,71): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(255,35): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(255,26): error C2530: 'result': references must be initialized [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(255,26): error C3531: 'result': a symbol whose type contains 'auto' must have an initializer [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(255,33): error C2143: syntax error: missing ';' before ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(255,48): error C2143: syntax error: missing ';' before ')' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(271,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(271,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(271,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(272,18): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(279,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(279,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(279,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(280,18): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(287,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(287,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(287,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(288,18): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(295,43): error C2065: 'results_': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(295,41): error C2059: syntax error: ':' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(295,53): error C2143: syntax error: missing ';' before '{' [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\tests\TestFramework.cpp(296,18): error C2065: 'suite': undeclared identifier [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+  Generating Code...
+

@@ -1,0 +1,15 @@
+MSBuild version 17.14.23+b0019275e for .NET Framework
+
+  frontend.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\frontend.lib
+  runtime_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\runtime_lib.lib
+  backend_lib.vcxproj -> D:\Univ Comp\umc-sdk\full-build\Release\backend_lib.lib
+  test_language_detector.cpp
+test_main.obj : error LNK2019: unresolved external symbol "public: __cdecl TestValidator::TestValidator(void)" (??0TestValidator@@QEAA@XZ) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: __cdecl TestValidator::~TestValidator(void)" (??1TestValidator@@QEAA@XZ) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl TestValidator::runAllTests(void)" (?runAllTests@TestValidator@@QEAA_NXZ) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl TestValidator::runLanguageTests(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?runLanguageTests@TestValidator@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl TestValidator::runSpecificTest(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?runSpecificTest@TestValidator@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: void __cdecl TestValidator::loadTestCasesFromDirectory(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?loadTestCasesFromDirectory@TestValidator@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+test_main.obj : error LNK2019: unresolved external symbol "public: void __cdecl TestValidator::generateTestReport(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?generateTestReport@TestValidator@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+D:\Univ Comp\umc-sdk\full-build\tests\Release\test_umc.exe : fatal error LNK1120: 7 unresolved externals [D:\Univ Comp\umc-sdk\full-build\tests\test_umc.vcxproj]
+

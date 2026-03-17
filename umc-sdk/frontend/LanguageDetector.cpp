@@ -49,7 +49,8 @@ Language LanguageDetector::detectByExtension(const std::string& filename) {
     }
 
     std::string extension = filename.substr(dotPos + 1);
-    std::transform(extension.begin(), extension.end(), extension.begin(), ::tolower);
+    std::transform(extension.begin(), extension.end(), extension.begin(), 
+                   [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
 
     if (extension == "c") return Language::C;
     if (extension == "cpp" || extension == "cxx" || extension == "cc") return Language::CPP;

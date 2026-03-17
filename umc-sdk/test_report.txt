@@ -1,0 +1,20 @@
+UMC-SDK Test Report
+==================
+
+Test: test_example.c
+Status: FAILED
+Execution Time: 0.0004813 seconds
+
+Test: test_example.java
+Status: FAILED
+Execution Time: 0.0004779 seconds
+
+Test: test_example.py
+Status: FAILED
+Execution Time: 0.0005089 seconds
+
+Summary:
+Passed: 0
+Failed: 3
+Total Time: 0.0014681 seconds
+Success Rate: 0%

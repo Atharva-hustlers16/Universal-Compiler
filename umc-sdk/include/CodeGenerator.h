@@ -13,9 +13,12 @@ public:
 
     bool generateCode(std::unique_ptr<llvm::Module> module, const std::string& outputFile);
     bool generateObjectCode(std::unique_ptr<llvm::Module> module, const std::string& outputFile);
+    bool generateAndExecute(std::unique_ptr<llvm::Module> module, int argc, char** argv);
 
     std::string getTargetTriple() const;
     std::string getTargetCPU() const;
+    std::string getTargetFeatures() const;
+    bool generateExecutable(std::unique_ptr<llvm::Module> module, const std::string& outputFile);
 
 private:
     std::unique_ptr<llvm::TargetMachine> targetMachine_;
