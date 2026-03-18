@@ -873,6 +873,40 @@ std::unique_ptr<ASTNode> PythonFrontend::parsePythonStatement(const std::string&
         }
     }
     
+    // Check for binary operations BEFORE function calls (to handle expressions like "text" + str(x))
+    size_t plusPos = statement.find('+');
+    if (plusPos != std::string::npos && plusPos > 0 && plusPos < statement.length() - 1) {
+        // Make sure this is not inside a string literal
+        bool inString = false;
+        bool isValidBinaryOp = true;
+        
+        for (size_t i = 0; i < plusPos; i++) {
+            char c = statement[i];
+            if ((c == '"' || c == '\'') && (i == 0 || statement[i - 1] != '\\')) {
+                inString = !inString;
+            }
+        }
+        
+        // If we're inside a string, this is not a binary operation
+        if (inString) {
+            isValidBinaryOp = false;
+        }
+        
+        if (isValidBinaryOp) {
+            std::string left = statement.substr(0, plusPos);
+            std::string right = statement.substr(plusPos + 1);
+            
+            auto binOpNode = std::make_unique<ASTNode>(ASTNodeType::BINARY_OP, "+");
+            auto leftExpr = parsePythonExpression(left);
+            auto rightExpr = parsePythonExpression(right);
+            
+            if (leftExpr) binOpNode->addChild(std::move(leftExpr));
+            if (rightExpr) binOpNode->addChild(std::move(rightExpr));
+            
+            return std::move(binOpNode);
+        }
+    }
+    
     // Check for function calls AFTER assignments
     size_t callPos = statement.find("print");
     if (callPos != std::string::npos) {
@@ -948,16 +982,16 @@ std::unique_ptr<ASTNode> PythonFrontend::parsePythonExpression(const std::string
         return std::make_unique<ASTNode>(ASTNodeType::LITERAL, trimmedExpr);
     }
     
-    // Handle f-strings (simplified - treat as string literals for now)
+    // Handle f-strings (enhanced implementation)
     if (trimmedExpr.length() >= 3 && ((trimmedExpr[0] == 'f' && trimmedExpr[1] == '"' && trimmedExpr[trimmedExpr.length() - 1] == '"') || 
                                (trimmedExpr[0] == 'f' && trimmedExpr[1] == '\'' && trimmedExpr[trimmedExpr.length() - 1] == '\''))) {
-        return std::make_unique<ASTNode>(ASTNodeType::LITERAL, trimmedExpr);
+        return parseFString(trimmedExpr);
     }
     
-    // Handle function calls in expressions (like add(x, y))
+    // Handle function calls in expressions (like add(x, y) and str(x))
     size_t parenPos = trimmedExpr.find("(");
     if (parenPos != std::string::npos && parenPos > 0) {
-        size_t closeParen = trimmedExpr.find(")", parenPos);
+        size_t closeParen = findMatchingParenthesis(trimmedExpr, parenPos);
         if (closeParen != std::string::npos) {
             std::string funcName = trimmedExpr.substr(0, parenPos);
             std::string argsStr = trimmedExpr.substr(parenPos + 1, closeParen - parenPos - 1);
@@ -969,6 +1003,14 @@ std::unique_ptr<ASTNode> PythonFrontend::parsePythonExpression(const std::string
                 funcName = funcName.substr(nameStart, nameEnd - nameStart + 1);
             }
             
+            // Handle built-in string methods
+            if (funcName == "str" || funcName == "int" || funcName == "float" || funcName == "len") {
+                auto callNode = std::make_unique<ASTNode>(ASTNodeType::FUNCTION_CALL, funcName);
+                parsePythonFunctionArguments(argsStr, *callNode);
+                return std::move(callNode);
+            }
+            
+            // Handle regular function calls
             auto callNode = std::make_unique<ASTNode>(ASTNodeType::FUNCTION_CALL, funcName);
             parsePythonFunctionArguments(argsStr, *callNode);
             return std::move(callNode);
@@ -1035,21 +1077,45 @@ void PythonFrontend::parsePythonFunctionArguments(const std::string& argsStr, AS
         }
         if (pos >= argsStr.length()) break;
         
-        // Find the next comma or end of string, but respect string literals
+        // Find the next comma or end of string, but respect string literals and nested parentheses
         size_t argEnd = pos;
         bool inString = false;
+        char stringChar = '\0';
+        int parenCount = 0;
+        int bracketCount = 0;
+        int braceCount = 0;
         
         while (argEnd < argsStr.length()) {
             char c = argsStr[argEnd];
             
-            if ((c == '"' || c == '\'') && (argEnd == 0 || argsStr[argEnd - 1] != '\\')) {
-                inString = !inString;
+            // Handle string literals
+            if (!inString && (c == '"' || c == '\'')) {
+                inString = true;
+                stringChar = c;
+            } else if (inString && c == stringChar) {
+                // Check for escaped quotes
+                if (argEnd == 0 || argsStr[argEnd - 1] != '\\') {
+                    inString = false;
+                    stringChar = '\0';
+                }
             }
             
-            if (!inString && (c == ',' || argEnd == argsStr.length() - 1)) {
-                if (c == ',') argEnd--;
-                break;
+            // Handle nested structures when not in string
+            if (!inString) {
+                if (c == '(') parenCount++;
+                else if (c == ')') parenCount--;
+                else if (c == '[') bracketCount++;
+                else if (c == ']') bracketCount--;
+                else if (c == '{') braceCount++;
+                else if (c == '}') braceCount--;
+                
+                // Break on comma only if we're not in nested structures
+                if (c == ',' && parenCount == 0 && bracketCount == 0 && braceCount == 0) {
+                    argEnd--;
+                    break;
+                }
             }
+            
             argEnd++;
         }
         
@@ -1128,4 +1194,119 @@ bool PythonFrontend::isInsidePythonFunction(const std::string& code, size_t posi
     
     // If indented, we're likely inside a function
     return indent > 0;
+}
+
+std::unique_ptr<ASTNode> PythonFrontend::parseFString(const std::string& fstring) {
+    // Extract the content inside f"..." or f'...'
+    if (fstring.length() < 3) {
+        return std::make_unique<ASTNode>(ASTNodeType::LITERAL, fstring);
+    }
+    
+    char quoteChar = fstring[1]; // Either " or '
+    std::string content = fstring.substr(2, fstring.length() - 3);
+    
+    // For now, create a simple string concatenation node
+    // This is a simplified implementation - a full implementation would parse {expressions}
+    auto concatNode = std::make_unique<ASTNode>(ASTNodeType::BINARY_OP, "+");
+    
+    // Parse the f-string content for {variable} patterns
+    size_t pos = 0;
+    std::string result;
+    bool hasVariables = false;
+    
+    while (pos < content.length()) {
+        if (content[pos] == '{' && pos + 1 < content.length()) {
+            // Found a variable reference
+            size_t closeBrace = content.find('}', pos);
+            if (closeBrace != std::string::npos) {
+                // Add the text before the variable
+                if (pos > 0) {
+                    std::string textPart = content.substr(0, pos);
+                    if (!textPart.empty()) {
+                        auto textNode = std::make_unique<ASTNode>(ASTNodeType::LITERAL, "\"" + textPart + "\"");
+                        concatNode->addChild(std::move(textNode));
+                    }
+                }
+                
+                // Parse the variable/expression inside braces
+                std::string varExpr = content.substr(pos + 1, closeBrace - pos - 1);
+                auto varNode = parsePythonExpression(varExpr);
+                if (varNode) {
+                    concatNode->addChild(std::move(varNode));
+                    hasVariables = true;
+                }
+                
+                // Move past the closing brace
+                pos = closeBrace + 1;
+                content = content.substr(pos);
+                pos = 0;
+            } else {
+                break; // No closing brace found
+            }
+        } else {
+            pos++;
+        }
+    }
+    
+    // Add remaining text
+    if (!content.empty()) {
+        auto textNode = std::make_unique<ASTNode>(ASTNodeType::LITERAL, "\"" + content + "\"");
+        if (hasVariables) {
+            concatNode->addChild(std::move(textNode));
+        } else {
+            // No variables found, return as simple string literal
+            return std::make_unique<ASTNode>(ASTNodeType::LITERAL, "\"" + content + "\"");
+        }
+    }
+    
+    // If we have variables, return the concatenation node
+    if (hasVariables && concatNode->getChildren().size() > 1) {
+        return std::move(concatNode);
+    } else if (concatNode->getChildren().size() == 1) {
+        // Only one child, return it directly
+        return std::move(const_cast<ASTNode&>(*concatNode->getChildren()[0]).clone());
+    } else {
+        // Fallback to literal
+        return std::make_unique<ASTNode>(ASTNodeType::LITERAL, fstring);
+    }
+}
+
+size_t PythonFrontend::findMatchingParenthesis(const std::string& expr, size_t openPos) {
+    if (openPos >= expr.length() || expr[openPos] != '(') {
+        return std::string::npos;
+    }
+    
+    int parenCount = 1;
+    bool inString = false;
+    char stringChar = '\0';
+    
+    for (size_t i = openPos + 1; i < expr.length(); i++) {
+        char c = expr[i];
+        
+        // Handle string literals
+        if (!inString && (c == '"' || c == '\'')) {
+            inString = true;
+            stringChar = c;
+        } else if (inString && c == stringChar) {
+            // Check for escaped quotes
+            if (i == 0 || expr[i - 1] != '\\') {
+                inString = false;
+                stringChar = '\0';
+            }
+        }
+        
+        // Count parentheses only when not in string
+        if (!inString) {
+            if (c == '(') {
+                parenCount++;
+            } else if (c == ')') {
+                parenCount--;
+                if (parenCount == 0) {
+                    return i;
+                }
+            }
+        }
+    }
+    
+    return std::string::npos; // No matching parenthesis found
 }

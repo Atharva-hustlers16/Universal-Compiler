@@ -198,7 +198,7 @@ std::any ASTInterpreter::callFunction(const std::string& name, const std::vector
 }
 
 bool ASTInterpreter::isBuiltinFunction(const std::string& name) const {
-    return name == "print" || name == "printf";
+    return name == "print" || name == "printf" || name == "str" || name == "int" || name == "float" || name == "len";
 }
 
 std::any ASTInterpreter::callBuiltinFunction(const std::string& name, const std::vector<std::any>& args) {
@@ -208,6 +208,47 @@ std::any ASTInterpreter::callBuiltinFunction(const std::string& name, const std:
         }
         std::cout << std::endl;
         return std::any();
+    }
+    else if (name == "str") {
+        if (args.empty()) {
+            return std::any(std::string(""));
+        }
+        return std::any(toString(args[0]));
+    }
+    else if (name == "int") {
+        if (args.empty()) {
+            return std::any(0);
+        }
+        try {
+            if (args[0].type() == typeid(std::string)) {
+                return std::any(std::stoi(std::any_cast<std::string>(args[0])));
+            }
+            return std::any(toInt(args[0]));
+        } catch (...) {
+            return std::any(0);
+        }
+    }
+    else if (name == "float") {
+        if (args.empty()) {
+            return std::any(0.0);
+        }
+        try {
+            if (args[0].type() == typeid(std::string)) {
+                return std::any(std::stod(std::any_cast<std::string>(args[0])));
+            }
+            return std::any(toDouble(args[0]));
+        } catch (...) {
+            return std::any(0.0);
+        }
+    }
+    else if (name == "len") {
+        if (args.empty()) {
+            return std::any(0);
+        }
+        if (args[0].type() == typeid(std::string)) {
+            return std::any(static_cast<int>(std::any_cast<std::string>(args[0]).length()));
+        }
+        return std::any(0);
     }
     
     throw std::runtime_error("Unknown built-in function: " + name);
@@ -234,4 +275,18 @@ double ASTInterpreter::toDouble(const std::any& value) const {
         return static_cast<double>(std::any_cast<int>(value));
     }
     return std::stod(toString(value));
+}
+
+int ASTInterpreter::toInt(const std::any& value) const {
+    if (value.type() == typeid(int)) {
+        return std::any_cast<int>(value);
+    }
+    if (value.type() == typeid(double)) {
+        return static_cast<int>(std::any_cast<double>(value));
+    }
+    try {
+        return std::stoi(toString(value));
+    } catch (...) {
+        return 0;
+    }
 }

@@ -82,6 +82,8 @@ private:
     std::unique_ptr<ASTNode> parsePythonStatement(const std::string& statement);
     std::unique_ptr<ASTNode> parsePythonExpression(const std::string& expr);
     void parsePythonFunctionArguments(const std::string& argsStr, ASTNode& callNode);
+    std::unique_ptr<ASTNode> parseFString(const std::string& fstring);
+    size_t findMatchingParenthesis(const std::string& expr, size_t openPos);
     std::string preprocessPythonCode(const std::string& sourceCode);
     bool isInsidePythonFunction(const std::string& code, size_t position);
 };
