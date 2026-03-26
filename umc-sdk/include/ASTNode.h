@@ -17,7 +17,15 @@ enum class ASTNodeType {
     FOR_LOOP,
     WHILE_LOOP,
     RETURN_STMT,
-    BLOCK
+    BLOCK,
+    // C++ specific types
+    CLASS_DECL,
+    CONSTRUCTOR_DECL,
+    METHOD_DECL,
+    PARAMETER,
+    RETURN_TYPE,
+    TYPE,
+    ARGUMENT
 };
 
 class ASTNode {

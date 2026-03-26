@@ -1,11 +1,13 @@
 #include "FrontendBase.h"
 #include "ASTNode.h"
+#include "CppFrontend.h"
 #include <iostream>
 
 // Forward declarations
 std::unique_ptr<FrontendBase> createCFrontend();
 std::unique_ptr<FrontendBase> createJavaFrontend();
 std::unique_ptr<FrontendBase> createPythonFrontend();
+std::unique_ptr<FrontendBase> createCppFrontend();
 
 // Simple AST Node implementation for demonstration
 class SimpleASTNode : public ASTNode {
@@ -68,8 +70,7 @@ std::unique_ptr<FrontendBase> createFrontend(Language lang) {
         case Language::C:
             return createCFrontend();
         case Language::CPP:
-            // For now, use same as C frontend
-            return createCFrontend();
+            return createCppFrontend();
         case Language::JAVA:
             return createJavaFrontend();
         case Language::PYTHON:
@@ -77,4 +78,10 @@ std::unique_ptr<FrontendBase> createFrontend(Language lang) {
         default:
             return std::make_unique<BasicFrontend>(Language::UNKNOWN);
     }
+}
+
+// C++ Frontend factory function
+std::unique_ptr<FrontendBase> createCppFrontend() {
+    auto frontend = std::make_unique<CppFrontend>();
+    return std::unique_ptr<FrontendBase>(frontend.release());
 }

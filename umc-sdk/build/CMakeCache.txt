@@ -33,7 +33,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=UMC-SDK
+CMAKE_PROJECT_NAME:STATIC=UMC-SDK-Test
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0.0
@@ -49,6 +49,15 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
+//Value Computed by CMake
+UMC-SDK-Test_BINARY_DIR:STATIC=D:/Univ Comp/umc-sdk/build
+
+//Value Computed by CMake
+UMC-SDK-Test_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+UMC-SDK-Test_SOURCE_DIR:STATIC=D:/Univ Comp/umc-sdk
 
 //Value Computed by CMake
 UMC-SDK_BINARY_DIR:STATIC=D:/Univ Comp/umc-sdk/build

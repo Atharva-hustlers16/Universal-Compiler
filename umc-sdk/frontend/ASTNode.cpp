@@ -43,6 +43,14 @@ std::string getNodeTypeName(ASTNodeType type) {
         case ASTNodeType::WHILE_LOOP: return "WhileLoop";
         case ASTNodeType::RETURN_STMT: return "ReturnStmt";
         case ASTNodeType::BLOCK: return "Block";
+        // C++ specific types
+        case ASTNodeType::CLASS_DECL: return "ClassDecl";
+        case ASTNodeType::CONSTRUCTOR_DECL: return "ConstructorDecl";
+        case ASTNodeType::METHOD_DECL: return "MethodDecl";
+        case ASTNodeType::PARAMETER: return "Parameter";
+        case ASTNodeType::RETURN_TYPE: return "ReturnType";
+        case ASTNodeType::TYPE: return "Type";
+        case ASTNodeType::ARGUMENT: return "Argument";
         default: return "Unknown";
     }
 }

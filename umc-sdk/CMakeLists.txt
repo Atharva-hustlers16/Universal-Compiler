@@ -15,6 +15,7 @@ set(FRONTEND_SOURCES
     "frontend/CFrontend.cpp"
     "frontend/JavaFrontend.cpp"
     "frontend/PythonFrontend.cpp"
+    "frontend/CppFrontend.cpp"
 )
 
 set(RUNTIME_SOURCES

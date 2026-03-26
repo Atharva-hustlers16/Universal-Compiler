@@ -156,7 +156,14 @@ Language LanguageDetector::detectBySyntax(const std::string& content) {
         if (java_score > c_cpp_score || colon_count > brace_count / 2) {
             return Language::JAVA;
         }
-        return content.find("std::") != std::string::npos ? Language::CPP : Language::C;
+        // Better C++ detection logic
+        bool isCpp = content.find("std::") != std::string::npos ||
+                      content.find("class ") != std::string::npos ||
+                      content.find("namespace ") != std::string::npos ||
+                      content.find("::") != std::string::npos ||
+                      content.find("#include <iostream>") != std::string::npos ||
+                      content.find("using namespace") != std::string::npos;
+        return isCpp ? Language::CPP : Language::C;
     }
 
     if (python_score > 0 || indent_spaces > 3) {
